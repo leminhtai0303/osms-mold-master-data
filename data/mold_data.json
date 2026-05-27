@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0",
-  "lastUpdated": "2026-05-25",
+  "lastUpdated": "2026-05-27",
   "reference": {
     "vendors": {
       "FINECHEMICAL_CN": {
@@ -452,12 +452,6 @@
         "shortName": "GOUSHENG-CN",
         "vendorId": null,
         "notes": "GuoSheng"
-      },
-      "JAITAI_CN_HENGMAO": {
-        "name": "JAITAI-CN(HENGMAO)",
-        "shortName": "JAITAI-CN(HENGMAO)",
-        "vendorId": null,
-        "notes": "HengMao"
       },
       "JIATAI_VN_HONGCHEN": {
         "name": "JIATAI-VN(HONGCHEN)",
@@ -1104,10 +1098,10 @@
                 "remark": null
               },
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -1367,9 +1361,6 @@
           "moldSizeToShoeSizes": {
             "13.5": null,
             "14.5": null,
-            "Special": [
-              "Allocation Type"
-            ],
             "3.5": [
               "3.5",
               "4"
@@ -1423,9 +1414,6 @@
           "componentName": "OS1 (Top)",
           "soleType": "Outsole",
           "moldSizeToShoeSizes": {
-            "Special": [
-              "Allocation Type"
-            ],
             "3.5": [
               "3.5",
               "4"
@@ -1715,10 +1703,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "LONGYU",
                 "moldShopName": "LongYu",
                 "location": {
@@ -2157,10 +2145,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -2219,10 +2207,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -2471,10 +2459,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -2768,10 +2756,10 @@
                 "remark": null
               },
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -2881,10 +2869,10 @@
                 "remark": null
               },
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -2943,10 +2931,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -3321,10 +3309,10 @@
                 "remark": null
               },
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -3383,10 +3371,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -3667,10 +3655,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -3718,10 +3706,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -4028,10 +4016,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -4221,10 +4209,10 @@
                 "remark": null
               },
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -4283,10 +4271,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -4686,10 +4674,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -4748,10 +4736,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -5368,10 +5356,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -5947,10 +5935,10 @@
                 "remark": null
               },
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -6007,10 +5995,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -6506,10 +6494,10 @@
                 "remark": null
               },
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -6612,10 +6600,10 @@
                 "remark": null
               },
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -6674,10 +6662,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -6969,10 +6957,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -7031,10 +7019,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -7167,10 +7155,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -7218,10 +7206,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -7325,10 +7313,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -7387,10 +7375,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -7447,10 +7435,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -7637,10 +7625,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -7734,10 +7722,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -7898,10 +7886,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -8013,10 +8001,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -8153,10 +8141,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -8205,10 +8193,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -8315,10 +8303,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -8430,10 +8418,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -8681,10 +8669,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -8851,10 +8839,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -8893,10 +8881,10 @@
                 "remark": null
               },
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -8986,10 +8974,10 @@
                 "remark": null
               },
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -9026,10 +9014,10 @@
                 "remark": null
               },
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -9154,10 +9142,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -9204,10 +9192,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -9307,9 +9295,6 @@
           "componentName": "MS1 (Top)",
           "soleType": "Midsole",
           "moldSizeToShoeSizes": {
-            "Special": [
-              "Allocation Type"
-            ],
             "3.5": [
               "3.5",
               "4"
@@ -9363,9 +9348,6 @@
           "componentName": "MS2 (Bottom)",
           "soleType": "Midsole",
           "moldSizeToShoeSizes": {
-            "Special": [
-              "Allocation Type"
-            ],
             "3.5": [
               "3.5",
               "4"
@@ -9419,9 +9401,6 @@
           "componentName": "OS1 (Top)",
           "soleType": "Outsole",
           "moldSizeToShoeSizes": {
-            "Special": [
-              "Allocation Type"
-            ],
             "3.5": [
               "3.5",
               "4"
@@ -9521,10 +9500,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -9771,10 +9750,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -9970,10 +9949,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -10023,10 +10002,10 @@
                 "remark": null
               },
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -10638,9 +10617,6 @@
           "soleType": "Outsole",
           "moldSizeToShoeSizes": {
             "13.5": null,
-            "Special": [
-              "Allocation Type"
-            ],
             "3.5": [
               "3.5",
               "4"
@@ -10691,9 +10667,6 @@
           "componentName": "MS1 (Top)",
           "soleType": "Midsole",
           "moldSizeToShoeSizes": {
-            "Special": [
-              "Allocation Type"
-            ],
             "3.5": [
               "3.5",
               "4"
@@ -10744,9 +10717,6 @@
           "componentName": "MS2 (Bottom)",
           "soleType": "Midsole",
           "moldSizeToShoeSizes": {
-            "Special": [
-              "Allocation Type"
-            ],
             "3.5": [
               "3.5",
               "4"
@@ -10797,9 +10767,6 @@
           "componentName": "MS3 (Heel)",
           "soleType": "Midsole",
           "moldSizeToShoeSizes": {
-            "Special": [
-              "Allocation Type"
-            ],
             "3.5": [
               "3.5",
               "4"
@@ -11198,9 +11165,6 @@
           "componentName": "OS1 (Top)",
           "soleType": "Outsole",
           "moldSizeToShoeSizes": {
-            "Special": [
-              "Allocation Type"
-            ],
             "3.5": [
               "3.5",
               "4"
@@ -11251,9 +11215,6 @@
           "componentName": "MS1 (Top)",
           "soleType": "Midsole",
           "moldSizeToShoeSizes": {
-            "Special": [
-              "Allocation Type"
-            ],
             "3.5": [
               "3.5",
               "4"
@@ -11304,9 +11265,6 @@
           "componentName": "MS3 (Heel)",
           "soleType": "Midsole",
           "moldSizeToShoeSizes": {
-            "Special": [
-              "Allocation Type"
-            ],
             "3.5": [
               "3.5",
               "4"
@@ -12599,10 +12557,10 @@
                 "remark": null
               },
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "XINSHENG",
                 "moldShopName": "XinSheng",
                 "location": {
@@ -12707,10 +12665,10 @@
                 "remark": null
               },
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "XINSHENG",
                 "moldShopName": "XinSheng",
                 "location": {
@@ -14687,10 +14645,10 @@
                 "remark": null
               },
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "LONGYU",
                 "moldShopName": "LongYu",
                 "location": {
@@ -16390,9 +16348,6 @@
           "soleType": "Outsole",
           "moldSizeToShoeSizes": {
             "13.5": null,
-            "Special": [
-              "Allocation Type"
-            ],
             "3.5": [
               "3.5",
               "4"
@@ -16444,9 +16399,6 @@
           "soleType": "Midsole",
           "moldSizeToShoeSizes": {
             "13.5": null,
-            "Special": [
-              "Allocation Type"
-            ],
             "3.5": [
               "3.5",
               "4"
@@ -16498,9 +16450,6 @@
           "soleType": "Midsole",
           "moldSizeToShoeSizes": {
             "13.5": null,
-            "Special": [
-              "Allocation Type"
-            ],
             "3.5": [
               "3.5",
               "4"
@@ -16552,9 +16501,6 @@
           "soleType": "Midsole",
           "moldSizeToShoeSizes": {
             "13.5": null,
-            "Special": [
-              "Allocation Type"
-            ],
             "3.5": [
               "3.5",
               "4"
@@ -17654,10 +17600,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -18407,10 +18353,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": null,
                 "moldShopName": null,
                 "location": {
@@ -18467,10 +18413,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": null,
                 "moldShopName": null,
                 "location": {
@@ -18679,10 +18625,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -20123,10 +20069,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "XINSHENG",
                 "moldShopName": "XinSheng",
                 "location": {
@@ -20523,10 +20469,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "XINSHENG",
                 "moldShopName": "XinSheng",
                 "location": {
@@ -20583,10 +20529,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "XINSHENG",
                 "moldShopName": "XinSheng",
                 "location": {
@@ -22939,10 +22885,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "XINSHENG",
                 "moldShopName": "XinSheng",
                 "location": {
@@ -23102,10 +23048,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "XINSHENG",
                 "moldShopName": "XinSheng",
                 "location": {
@@ -23616,10 +23562,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -24882,10 +24828,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -25490,10 +25436,10 @@
                 "remark": null
               },
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -25605,10 +25551,10 @@
                 "remark": null
               },
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -25667,10 +25613,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -26659,10 +26605,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "XINSHENG",
                 "moldShopName": "XinSheng",
                 "location": {
@@ -26854,10 +26800,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -27098,10 +27044,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -27348,10 +27294,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -27410,10 +27356,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -27896,10 +27842,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -27950,9 +27896,6 @@
           "componentName": "MS1 (Top)",
           "soleType": "Midsole",
           "moldSizeToShoeSizes": {
-            "Special": [
-              "Allocation Type"
-            ],
             "3.5": [
               "3.5",
               "4"
@@ -28011,9 +27954,6 @@
           "componentName": "MS2 (Bottom - Blocker)",
           "soleType": "Midsole",
           "moldSizeToShoeSizes": {
-            "Special": [
-              "Allocation Type"
-            ],
             "3.5": [
               "3.5",
               "4"
@@ -28072,9 +28012,6 @@
           "componentName": "OS1 (Top)",
           "soleType": "Outsole",
           "moldSizeToShoeSizes": {
-            "Special": [
-              "Allocation Type"
-            ],
             "3.5": [
               "3.5",
               "4"
@@ -28258,10 +28195,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -28320,10 +28257,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -28551,10 +28488,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -28740,10 +28677,10 @@
                 "remark": null
               },
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -28802,10 +28739,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -29188,10 +29125,10 @@
                 "remark": null
               },
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -29241,10 +29178,10 @@
                 "remark": null
               },
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -29301,10 +29238,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -29363,10 +29300,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -29638,10 +29575,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "XINSHENG",
                 "moldShopName": "XinSheng",
                 "location": {
@@ -29831,10 +29768,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "XINSHENG",
                 "moldShopName": "XinSheng",
                 "location": {
@@ -30153,10 +30090,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -30268,10 +30205,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -30404,10 +30341,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -30521,10 +30458,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -30726,10 +30663,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -30788,10 +30725,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -30848,10 +30785,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -31008,10 +30945,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -31169,10 +31106,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "YY",
                 "moldShopName": "YY",
                 "location": {
@@ -31300,10 +31237,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -31362,10 +31299,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -31422,10 +31359,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -31587,10 +31524,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -31702,10 +31639,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -31833,10 +31770,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -31881,10 +31818,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "XINSHENG",
                 "moldShopName": "XinSheng",
                 "location": {
@@ -31978,10 +31915,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -32030,10 +31967,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -32080,10 +32017,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -32188,10 +32125,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -32290,10 +32227,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -32352,10 +32289,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -32483,10 +32420,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -32585,10 +32522,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -32637,10 +32574,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -32738,10 +32675,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "XINSHENG",
                 "moldShopName": "XinSheng",
                 "location": {
@@ -32791,10 +32728,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "XINSHENG",
                 "moldShopName": "XinSheng",
                 "location": {
@@ -32895,10 +32832,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -32947,10 +32884,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -32997,10 +32934,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -33122,10 +33059,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -33174,10 +33111,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -33280,10 +33217,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -33398,10 +33335,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -33532,10 +33469,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -33594,10 +33531,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -33725,10 +33662,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -33785,10 +33722,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -33916,10 +33853,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": null,
                 "moldShopName": null,
                 "location": {
@@ -33992,10 +33929,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": null,
                 "moldShopName": null,
                 "location": {
@@ -34056,10 +33993,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": null,
                 "moldShopName": null,
                 "location": {
@@ -34105,10 +34042,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": null,
                 "moldShopName": null,
                 "location": {
@@ -34197,10 +34134,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": null,
                 "moldShopName": null,
                 "location": {
@@ -34265,10 +34202,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -34463,10 +34400,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -34660,10 +34597,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -34712,10 +34649,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -34813,10 +34750,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -34863,10 +34800,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -34969,10 +34906,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "XINYUE",
                 "moldShopName": "XinYue",
                 "location": {
@@ -35180,10 +35117,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -35382,10 +35319,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -35535,10 +35472,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": null,
                 "moldShopName": null,
                 "location": {
@@ -35615,10 +35552,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": null,
                 "moldShopName": null,
                 "location": {
@@ -35675,10 +35612,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": null,
                 "moldShopName": null,
                 "location": {
@@ -35737,10 +35674,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": null,
                 "moldShopName": null,
                 "location": {
@@ -35897,10 +35834,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": null,
                 "moldShopName": null,
                 "location": {
@@ -35957,10 +35894,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": null,
                 "moldShopName": null,
                 "location": {
@@ -36008,10 +35945,10 @@
                 "remark": null
               },
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": null,
                 "moldShopName": null,
                 "location": {
@@ -36061,10 +35998,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": null,
                 "moldShopName": null,
                 "location": {
@@ -36220,10 +36157,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": null,
                 "moldShopName": null,
                 "location": {
@@ -36280,10 +36217,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": null,
                 "moldShopName": null,
                 "location": {
@@ -36405,10 +36342,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": null,
                 "moldShopName": null,
                 "location": {
@@ -36456,10 +36393,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": null,
                 "moldShopName": null,
                 "location": {
@@ -36554,10 +36491,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": null,
                 "moldShopName": null,
                 "location": {
@@ -36624,10 +36561,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": null,
                 "moldShopName": null,
                 "location": {
@@ -36704,10 +36641,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": null,
                 "moldShopName": null,
                 "location": {
@@ -36766,10 +36703,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": null,
                 "moldShopName": null,
                 "location": {
@@ -36826,10 +36763,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": null,
                 "moldShopName": null,
                 "location": {
@@ -36877,10 +36814,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": null,
                 "moldShopName": null,
                 "location": {
@@ -37057,10 +36994,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": null,
                 "moldShopName": null,
                 "location": {
@@ -37137,10 +37074,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": null,
                 "moldShopName": null,
                 "location": {
@@ -37187,10 +37124,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": null,
                 "moldShopName": null,
                 "location": {
@@ -37235,10 +37172,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": null,
                 "moldShopName": null,
                 "location": {
@@ -37343,10 +37280,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": null,
                 "moldShopName": null,
                 "location": {
@@ -37394,10 +37331,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": null,
                 "moldShopName": null,
                 "location": {
@@ -37484,10 +37421,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": null,
                 "moldShopName": null,
                 "location": {
@@ -37535,10 +37472,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": null,
                 "moldShopName": null,
                 "location": {
@@ -37633,10 +37570,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": null,
                 "moldShopName": null,
                 "location": {
@@ -37713,10 +37650,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "XINSHENG",
                 "moldShopName": "XinSheng",
                 "location": {
@@ -37776,10 +37713,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "XINSHENG",
                 "moldShopName": "XinSheng",
                 "location": {
@@ -37916,10 +37853,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "XINSHENG",
                 "moldShopName": "XinSheng",
                 "location": {
@@ -37969,10 +37906,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "XINSHENG",
                 "moldShopName": "XinSheng",
                 "location": {
@@ -38019,10 +37956,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "XINSHENG",
                 "moldShopName": "XinSheng",
                 "location": {
@@ -38158,10 +38095,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "XINSHENG",
                 "moldShopName": "XinSheng",
                 "location": {
@@ -38260,10 +38197,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "XINSHENG",
                 "moldShopName": "XinSheng",
                 "location": {
@@ -38362,10 +38299,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "XINSHENG",
                 "moldShopName": "XinSheng",
                 "location": {
@@ -38416,10 +38353,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "XINSHENG",
                 "moldShopName": "XinSheng",
                 "location": {
@@ -38539,10 +38476,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "XINSHENG",
                 "moldShopName": "XinSheng",
                 "location": {
@@ -38590,10 +38527,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "XINSHENG",
                 "moldShopName": "XinSheng",
                 "location": {
@@ -38688,10 +38625,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "XINSHENG",
                 "moldShopName": "XinSheng",
                 "location": {
@@ -38755,10 +38692,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "XINSHENG",
                 "moldShopName": "XinSheng",
                 "location": {
@@ -38901,10 +38838,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "XINSHENG",
                 "moldShopName": "XinSheng",
                 "location": {
@@ -39013,10 +38950,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "XINSHENG",
                 "moldShopName": "XinSheng",
                 "location": {
@@ -39115,10 +39052,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "XINSHENG",
                 "moldShopName": "XinSheng",
                 "location": {
@@ -39217,10 +39154,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "XINSHENG",
                 "moldShopName": "XinSheng",
                 "location": {
@@ -39269,10 +39206,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "XINSHENG",
                 "moldShopName": "XinSheng",
                 "location": {
@@ -39370,10 +39307,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "XINSHENG",
                 "moldShopName": "XinSheng",
                 "location": {
@@ -39472,10 +39409,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -39521,10 +39458,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "JAITAI_CN_HENGMAO",
-                "vendorName": "JAITAI-CN(HENGMAO)",
-                "vendorShortName": "JAITAI-CN(HENGMAO)",
-                "vendorId": null,
+                "vendorCode": "JIATAI_CN_HENGMAO",
+                "vendorName": "QZ HENGMAO PLASTIC CO.,LTD ",
+                "vendorShortName": "JiaTai-CN(HengMao)",
+                "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
