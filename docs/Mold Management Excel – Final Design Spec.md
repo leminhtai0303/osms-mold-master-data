@@ -348,7 +348,8 @@ Row 4: Table header
 
 Column:
 StyleName           [Free text]
-
+OutSole             [Check box]
+MidSole             [Check box]
 ------------------------------------------------------------
 6.3 Rules
 ------------------------------------------------------------

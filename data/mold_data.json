@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0",
-  "lastUpdated": "2026-05-27",
+  "lastUpdated": "2026-06-01",
   "reference": {
     "vendors": {
       "FINECHEMICAL_CN": {
@@ -446,12 +446,6 @@
         "shortName": "YiXin-VN(NghiaXin)",
         "vendorId": "FTY000477",
         "notes": null
-      },
-      "GOUSHENG_CN": {
-        "name": "GOUSHENG-CN",
-        "shortName": "GOUSHENG-CN",
-        "vendorId": null,
-        "notes": "GuoSheng"
       },
       "JIATAI_VN_HONGCHEN": {
         "name": "JIATAI-VN(HONGCHEN)",
@@ -1878,10 +1872,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "GOUSHENG_CN",
-                "vendorName": "GOUSHENG-CN",
-                "vendorShortName": "GOUSHENG-CN",
-                "vendorId": null,
+                "vendorCode": "GUOSHENG_CN",
+                "vendorName": "FUJIAN XINGXUN NEW MATERIALS TECHNOLOGY CO.,LTD",
+                "vendorShortName": "GuoSheng-CN",
+                "vendorId": "FTY000480",
                 "moldShopCode": "GUOSHENG",
                 "moldShopName": "GuoSheng",
                 "location": {
@@ -2032,10 +2026,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "GOUSHENG_CN",
-                "vendorName": "GOUSHENG-CN",
-                "vendorShortName": "GOUSHENG-CN",
-                "vendorId": null,
+                "vendorCode": "GUOSHENG_CN",
+                "vendorName": "FUJIAN XINGXUN NEW MATERIALS TECHNOLOGY CO.,LTD",
+                "vendorShortName": "GuoSheng-CN",
+                "vendorId": "FTY000480",
                 "moldShopCode": "GUOSHENG",
                 "moldShopName": "GuoSheng",
                 "location": {
@@ -2085,10 +2079,10 @@
                 "remark": null
               },
               {
-                "vendorCode": "GOUSHENG_CN",
-                "vendorName": "GOUSHENG-CN",
-                "vendorShortName": "GOUSHENG-CN",
-                "vendorId": null,
+                "vendorCode": "GUOSHENG_CN",
+                "vendorName": "FUJIAN XINGXUN NEW MATERIALS TECHNOLOGY CO.,LTD",
+                "vendorShortName": "GuoSheng-CN",
+                "vendorId": "FTY000480",
                 "moldShopCode": "GUOSHENG",
                 "moldShopName": "GuoSheng",
                 "location": {
@@ -2397,10 +2391,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "GOUSHENG_CN",
-                "vendorName": "GOUSHENG-CN",
-                "vendorShortName": "GOUSHENG-CN",
-                "vendorId": null,
+                "vendorCode": "GUOSHENG_CN",
+                "vendorName": "FUJIAN XINGXUN NEW MATERIALS TECHNOLOGY CO.,LTD",
+                "vendorShortName": "GuoSheng-CN",
+                "vendorId": "FTY000480",
                 "moldShopCode": "GUOSHENG",
                 "moldShopName": "GuoSheng",
                 "location": {
@@ -3267,10 +3261,10 @@
                 "remark": null
               },
               {
-                "vendorCode": "GOUSHENG_CN",
-                "vendorName": "GOUSHENG-CN",
-                "vendorShortName": "GOUSHENG-CN",
-                "vendorId": null,
+                "vendorCode": "GUOSHENG_CN",
+                "vendorName": "FUJIAN XINGXUN NEW MATERIALS TECHNOLOGY CO.,LTD",
+                "vendorShortName": "GuoSheng-CN",
+                "vendorId": "FTY000480",
                 "moldShopCode": "GUOSHENG",
                 "moldShopName": "GuoSheng",
                 "location": {
@@ -3606,10 +3600,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "GOUSHENG_CN",
-                "vendorName": "GOUSHENG-CN",
-                "vendorShortName": "GOUSHENG-CN",
-                "vendorId": null,
+                "vendorCode": "GUOSHENG_CN",
+                "vendorName": "FUJIAN XINGXUN NEW MATERIALS TECHNOLOGY CO.,LTD",
+                "vendorShortName": "GuoSheng-CN",
+                "vendorId": "FTY000480",
                 "moldShopCode": "GUOSHENG",
                 "moldShopName": "GuoSheng",
                 "location": {
@@ -3811,10 +3805,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "GOUSHENG_CN",
-                "vendorName": "GOUSHENG-CN",
-                "vendorShortName": "GOUSHENG-CN",
-                "vendorId": null,
+                "vendorCode": "GUOSHENG_CN",
+                "vendorName": "FUJIAN XINGXUN NEW MATERIALS TECHNOLOGY CO.,LTD",
+                "vendorShortName": "GuoSheng-CN",
+                "vendorId": "FTY000480",
                 "moldShopCode": "GUOSHENG",
                 "moldShopName": "GuoSheng",
                 "location": {
@@ -3965,10 +3959,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "GOUSHENG_CN",
-                "vendorName": "GOUSHENG-CN",
-                "vendorShortName": "GOUSHENG-CN",
-                "vendorId": null,
+                "vendorCode": "GUOSHENG_CN",
+                "vendorName": "FUJIAN XINGXUN NEW MATERIALS TECHNOLOGY CO.,LTD",
+                "vendorShortName": "GuoSheng-CN",
+                "vendorId": "FTY000480",
                 "moldShopCode": "GUOSHENG",
                 "moldShopName": "GuoSheng",
                 "location": {
@@ -4561,10 +4555,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "GOUSHENG_CN",
-                "vendorName": "GOUSHENG-CN",
-                "vendorShortName": "GOUSHENG-CN",
-                "vendorId": null,
+                "vendorCode": "GUOSHENG_CN",
+                "vendorName": "FUJIAN XINGXUN NEW MATERIALS TECHNOLOGY CO.,LTD",
+                "vendorShortName": "GuoSheng-CN",
+                "vendorId": "FTY000480",
                 "moldShopCode": "GUOSHENG",
                 "moldShopName": "GuoSheng",
                 "location": {
@@ -4614,10 +4608,10 @@
                 "remark": null
               },
               {
-                "vendorCode": "GOUSHENG_CN",
-                "vendorName": "GOUSHENG-CN",
-                "vendorShortName": "GOUSHENG-CN",
-                "vendorId": null,
+                "vendorCode": "GUOSHENG_CN",
+                "vendorName": "FUJIAN XINGXUN NEW MATERIALS TECHNOLOGY CO.,LTD",
+                "vendorShortName": "GuoSheng-CN",
+                "vendorId": "FTY000480",
                 "moldShopCode": "GUOSHENG",
                 "moldShopName": "GuoSheng",
                 "location": {
@@ -4930,10 +4924,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "GOUSHENG_CN",
-                "vendorName": "GOUSHENG-CN",
-                "vendorShortName": "GOUSHENG-CN",
-                "vendorId": null,
+                "vendorCode": "GUOSHENG_CN",
+                "vendorName": "FUJIAN XINGXUN NEW MATERIALS TECHNOLOGY CO.,LTD",
+                "vendorShortName": "GuoSheng-CN",
+                "vendorId": "FTY000480",
                 "moldShopCode": "GUOSHENG",
                 "moldShopName": "GuoSheng",
                 "location": {
@@ -5181,10 +5175,10 @@
                 "remark": null
               },
               {
-                "vendorCode": "GOUSHENG_CN",
-                "vendorName": "GOUSHENG-CN",
-                "vendorShortName": "GOUSHENG-CN",
-                "vendorId": null,
+                "vendorCode": "GUOSHENG_CN",
+                "vendorName": "FUJIAN XINGXUN NEW MATERIALS TECHNOLOGY CO.,LTD",
+                "vendorShortName": "GuoSheng-CN",
+                "vendorId": "FTY000480",
                 "moldShopCode": "GUOSHENG",
                 "moldShopName": "GuoSheng",
                 "location": {
@@ -5294,10 +5288,10 @@
                 "remark": null
               },
               {
-                "vendorCode": "GOUSHENG_CN",
-                "vendorName": "GOUSHENG-CN",
-                "vendorShortName": "GOUSHENG-CN",
-                "vendorId": null,
+                "vendorCode": "GUOSHENG_CN",
+                "vendorName": "FUJIAN XINGXUN NEW MATERIALS TECHNOLOGY CO.,LTD",
+                "vendorShortName": "GuoSheng-CN",
+                "vendorId": "FTY000480",
                 "moldShopCode": "GUOSHENG",
                 "moldShopName": "GuoSheng",
                 "location": {
@@ -5521,10 +5515,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "GOUSHENG_CN",
-                "vendorName": "GOUSHENG-CN",
-                "vendorShortName": "GOUSHENG-CN",
-                "vendorId": null,
+                "vendorCode": "GUOSHENG_CN",
+                "vendorName": "FUJIAN XINGXUN NEW MATERIALS TECHNOLOGY CO.,LTD",
+                "vendorShortName": "GuoSheng-CN",
+                "vendorId": "FTY000480",
                 "moldShopCode": "GUOSHENG",
                 "moldShopName": "GuoSheng",
                 "location": {
@@ -5574,10 +5568,10 @@
                 "remark": null
               },
               {
-                "vendorCode": "GOUSHENG_CN",
-                "vendorName": "GOUSHENG-CN",
-                "vendorShortName": "GOUSHENG-CN",
-                "vendorId": null,
+                "vendorCode": "GUOSHENG_CN",
+                "vendorName": "FUJIAN XINGXUN NEW MATERIALS TECHNOLOGY CO.,LTD",
+                "vendorShortName": "GuoSheng-CN",
+                "vendorId": "FTY000480",
                 "moldShopCode": "GUOSHENG",
                 "moldShopName": "GuoSheng",
                 "location": {
@@ -5829,10 +5823,10 @@
                 "remark": null
               },
               {
-                "vendorCode": "GOUSHENG_CN",
-                "vendorName": "GOUSHENG-CN",
-                "vendorShortName": "GOUSHENG-CN",
-                "vendorId": null,
+                "vendorCode": "GUOSHENG_CN",
+                "vendorName": "FUJIAN XINGXUN NEW MATERIALS TECHNOLOGY CO.,LTD",
+                "vendorShortName": "GuoSheng-CN",
+                "vendorId": "FTY000480",
                 "moldShopCode": "GUOSHENG",
                 "moldShopName": "GuoSheng",
                 "location": {
@@ -6335,10 +6329,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "GOUSHENG_CN",
-                "vendorName": "GOUSHENG-CN",
-                "vendorShortName": "GOUSHENG-CN",
-                "vendorId": null,
+                "vendorCode": "GUOSHENG_CN",
+                "vendorName": "FUJIAN XINGXUN NEW MATERIALS TECHNOLOGY CO.,LTD",
+                "vendorShortName": "GuoSheng-CN",
+                "vendorId": "FTY000480",
                 "moldShopCode": "GUOSHENG",
                 "moldShopName": "GuoSheng",
                 "location": {
@@ -6441,10 +6435,10 @@
                 "remark": null
               },
               {
-                "vendorCode": "GOUSHENG_CN",
-                "vendorName": "GOUSHENG-CN",
-                "vendorShortName": "GOUSHENG-CN",
-                "vendorId": null,
+                "vendorCode": "GUOSHENG_CN",
+                "vendorName": "FUJIAN XINGXUN NEW MATERIALS TECHNOLOGY CO.,LTD",
+                "vendorShortName": "GuoSheng-CN",
+                "vendorId": "FTY000480",
                 "moldShopCode": "GUOSHENG",
                 "moldShopName": "GuoSheng",
                 "location": {
@@ -23500,10 +23494,10 @@
                 "remark": null
               },
               {
-                "vendorCode": "GOUSHENG_CN",
-                "vendorName": "GOUSHENG-CN",
-                "vendorShortName": "GOUSHENG-CN",
-                "vendorId": null,
+                "vendorCode": "GUOSHENG_CN",
+                "vendorName": "FUJIAN XINGXUN NEW MATERIALS TECHNOLOGY CO.,LTD",
+                "vendorShortName": "GuoSheng-CN",
+                "vendorId": "FTY000480",
                 "moldShopCode": "GUOSHENG",
                 "moldShopName": "GuoSheng",
                 "location": {
@@ -26738,10 +26732,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "GOUSHENG_CN",
-                "vendorName": "GOUSHENG-CN",
-                "vendorShortName": "GOUSHENG-CN",
-                "vendorId": null,
+                "vendorCode": "GUOSHENG_CN",
+                "vendorName": "FUJIAN XINGXUN NEW MATERIALS TECHNOLOGY CO.,LTD",
+                "vendorShortName": "GuoSheng-CN",
+                "vendorId": "FTY000480",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -26936,10 +26930,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "GOUSHENG_CN",
-                "vendorName": "GOUSHENG-CN",
-                "vendorShortName": "GOUSHENG-CN",
-                "vendorId": null,
+                "vendorCode": "GUOSHENG_CN",
+                "vendorName": "FUJIAN XINGXUN NEW MATERIALS TECHNOLOGY CO.,LTD",
+                "vendorShortName": "GuoSheng-CN",
+                "vendorId": "FTY000480",
                 "moldShopCode": "GUOSHENG",
                 "moldShopName": "GuoSheng",
                 "location": {
@@ -26989,10 +26983,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "GOUSHENG_CN",
-                "vendorName": "GOUSHENG-CN",
-                "vendorShortName": "GOUSHENG-CN",
-                "vendorId": null,
+                "vendorCode": "GUOSHENG_CN",
+                "vendorName": "FUJIAN XINGXUN NEW MATERIALS TECHNOLOGY CO.,LTD",
+                "vendorShortName": "GuoSheng-CN",
+                "vendorId": "FTY000480",
                 "moldShopCode": "GUOSHENG",
                 "moldShopName": "GuoSheng",
                 "location": {
@@ -27181,10 +27175,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "GOUSHENG_CN",
-                "vendorName": "GOUSHENG-CN",
-                "vendorShortName": "GOUSHENG-CN",
-                "vendorId": null,
+                "vendorCode": "GUOSHENG_CN",
+                "vendorName": "FUJIAN XINGXUN NEW MATERIALS TECHNOLOGY CO.,LTD",
+                "vendorShortName": "GuoSheng-CN",
+                "vendorId": "FTY000480",
                 "moldShopCode": "GUOSHENG",
                 "moldShopName": "GuoSheng",
                 "location": {
@@ -27234,10 +27228,10 @@
                 "remark": null
               },
               {
-                "vendorCode": "GOUSHENG_CN",
-                "vendorName": "GOUSHENG-CN",
-                "vendorShortName": "GOUSHENG-CN",
-                "vendorId": null,
+                "vendorCode": "GUOSHENG_CN",
+                "vendorName": "FUJIAN XINGXUN NEW MATERIALS TECHNOLOGY CO.,LTD",
+                "vendorShortName": "GuoSheng-CN",
+                "vendorId": "FTY000480",
                 "moldShopCode": "GUOSHENG",
                 "moldShopName": "GuoSheng",
                 "location": {
@@ -27688,10 +27682,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "GOUSHENG_CN",
-                "vendorName": "GOUSHENG-CN",
-                "vendorShortName": "GOUSHENG-CN",
-                "vendorId": null,
+                "vendorCode": "GUOSHENG_CN",
+                "vendorName": "FUJIAN XINGXUN NEW MATERIALS TECHNOLOGY CO.,LTD",
+                "vendorShortName": "GuoSheng-CN",
+                "vendorId": "FTY000480",
                 "moldShopCode": "GUOSHENG",
                 "moldShopName": "GuoSheng",
                 "location": {
@@ -27741,10 +27735,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "GOUSHENG_CN",
-                "vendorName": "GOUSHENG-CN",
-                "vendorShortName": "GOUSHENG-CN",
-                "vendorId": null,
+                "vendorCode": "GUOSHENG_CN",
+                "vendorName": "FUJIAN XINGXUN NEW MATERIALS TECHNOLOGY CO.,LTD",
+                "vendorShortName": "GuoSheng-CN",
+                "vendorId": "FTY000480",
                 "moldShopCode": "GUOSHENG",
                 "moldShopName": "GuoSheng",
                 "location": {
@@ -27787,10 +27781,10 @@
                 "remark": null
               },
               {
-                "vendorCode": "GOUSHENG_CN",
-                "vendorName": "GOUSHENG-CN",
-                "vendorShortName": "GOUSHENG-CN",
-                "vendorId": null,
+                "vendorCode": "GUOSHENG_CN",
+                "vendorName": "FUJIAN XINGXUN NEW MATERIALS TECHNOLOGY CO.,LTD",
+                "vendorShortName": "GuoSheng-CN",
+                "vendorId": "FTY000480",
                 "moldShopCode": "GUOSHENG",
                 "moldShopName": "GuoSheng",
                 "location": {
@@ -28082,10 +28076,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "GOUSHENG_CN",
-                "vendorName": "GOUSHENG-CN",
-                "vendorShortName": "GOUSHENG-CN",
-                "vendorId": null,
+                "vendorCode": "GUOSHENG_CN",
+                "vendorName": "FUJIAN XINGXUN NEW MATERIALS TECHNOLOGY CO.,LTD",
+                "vendorShortName": "GuoSheng-CN",
+                "vendorId": "FTY000480",
                 "moldShopCode": "GUOSHENG",
                 "moldShopName": "GuoSheng",
                 "location": {
@@ -28135,10 +28129,10 @@
                 "remark": null
               },
               {
-                "vendorCode": "GOUSHENG_CN",
-                "vendorName": "GOUSHENG-CN",
-                "vendorShortName": "GOUSHENG-CN",
-                "vendorId": null,
+                "vendorCode": "GUOSHENG_CN",
+                "vendorName": "FUJIAN XINGXUN NEW MATERIALS TECHNOLOGY CO.,LTD",
+                "vendorShortName": "GuoSheng-CN",
+                "vendorId": "FTY000480",
                 "moldShopCode": "GUOSHENG",
                 "moldShopName": "GuoSheng",
                 "location": {
@@ -28426,10 +28420,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "GOUSHENG_CN",
-                "vendorName": "GOUSHENG-CN",
-                "vendorShortName": "GOUSHENG-CN",
-                "vendorId": null,
+                "vendorCode": "GUOSHENG_CN",
+                "vendorName": "FUJIAN XINGXUN NEW MATERIALS TECHNOLOGY CO.,LTD",
+                "vendorShortName": "GuoSheng-CN",
+                "vendorId": "FTY000480",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -29513,10 +29507,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "GOUSHENG_CN",
-                "vendorName": "GOUSHENG-CN",
-                "vendorShortName": "GOUSHENG-CN",
-                "vendorId": null,
+                "vendorCode": "GUOSHENG_CN",
+                "vendorName": "FUJIAN XINGXUN NEW MATERIALS TECHNOLOGY CO.,LTD",
+                "vendorShortName": "GuoSheng-CN",
+                "vendorId": "FTY000480",
                 "moldShopCode": "XINSHENG",
                 "moldShopName": "XinSheng",
                 "location": {
@@ -29706,10 +29700,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "GOUSHENG_CN",
-                "vendorName": "GOUSHENG-CN",
-                "vendorShortName": "GOUSHENG-CN",
-                "vendorId": null,
+                "vendorCode": "GUOSHENG_CN",
+                "vendorName": "FUJIAN XINGXUN NEW MATERIALS TECHNOLOGY CO.,LTD",
+                "vendorShortName": "GuoSheng-CN",
+                "vendorId": "FTY000480",
                 "moldShopCode": "XINSHENG",
                 "moldShopName": "XinSheng",
                 "location": {
@@ -29899,10 +29893,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "GOUSHENG_CN",
-                "vendorName": "GOUSHENG-CN",
-                "vendorShortName": "GOUSHENG-CN",
-                "vendorId": null,
+                "vendorCode": "GUOSHENG_CN",
+                "vendorName": "FUJIAN XINGXUN NEW MATERIALS TECHNOLOGY CO.,LTD",
+                "vendorShortName": "GuoSheng-CN",
+                "vendorId": "FTY000480",
                 "moldShopCode": "HONGSHENG",
                 "moldShopName": "HongSheng",
                 "location": {
@@ -30001,10 +29995,10 @@
             "notes": null,
             "molds": [
               {
-                "vendorCode": "GOUSHENG_CN",
-                "vendorName": "GOUSHENG-CN",
-                "vendorShortName": "GOUSHENG-CN",
-                "vendorId": null,
+                "vendorCode": "GUOSHENG_CN",
+                "vendorName": "FUJIAN XINGXUN NEW MATERIALS TECHNOLOGY CO.,LTD",
+                "vendorShortName": "GuoSheng-CN",
+                "vendorId": "FTY000480",
                 "moldShopCode": "GUOSHENG",
                 "moldShopName": "GuoSheng",
                 "location": {
