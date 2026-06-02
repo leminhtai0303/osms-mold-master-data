@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(PYTHONIOENCODING=utf-8 PYTHONUTF8=1 /usr/bin/python3 *)",
+      "Bash(/usr/bin/python3 -c \"import jupyter_client\")",
+      "Bash(/workspace/.venv/Scripts/python.exe --version)",
+      "Bash(wslpath -w /workspace)",
+      "Bash(pwsh -Command \"Get-Location\")",
+      "Bash(pwsh -Command \"Test-Path 'C:\\\\workspace'\")",
+      "Read(//proc/2004/**)"
+    ]
+  }
+}
