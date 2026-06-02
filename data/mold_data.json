@@ -1353,8 +1353,6 @@
           "componentName": "MS1 (Top)",
           "soleType": "Midsole",
           "moldSizeToShoeSizes": {
-            "13.5": null,
-            "14.5": null,
             "3.5": [
               "3.5",
               "4"
@@ -1395,6 +1393,8 @@
               "12.5",
               "13"
             ],
+            "13.5": null,
+            "14.5": null,
             "14": [
               "14"
             ],
@@ -1402,7 +1402,7 @@
               "15"
             ]
           },
-          "notes": "Special Molds mapping applied (Mold Size -> Shoe Sizes)"
+          "notes": "Merged from Special Molds sheet and inventory defaults"
         },
         "OS1": {
           "componentName": "OS1 (Top)",
@@ -1455,7 +1455,7 @@
               "15"
             ]
           },
-          "notes": "Special Molds mapping applied (Mold Size -> Shoe Sizes)"
+          "notes": "Merged from Special Molds sheet and inventory defaults"
         }
       }
     },
@@ -9336,7 +9336,7 @@
               "15"
             ]
           },
-          "notes": "Special Molds mapping applied (Mold Size -> Shoe Sizes)"
+          "notes": "Merged from Special Molds sheet and inventory defaults"
         },
         "MS2": {
           "componentName": "MS2 (Bottom)",
@@ -9389,7 +9389,7 @@
               "15"
             ]
           },
-          "notes": "Special Molds mapping applied (Mold Size -> Shoe Sizes)"
+          "notes": "Merged from Special Molds sheet and inventory defaults"
         },
         "OS1": {
           "componentName": "OS1 (Top)",
@@ -9442,7 +9442,7 @@
               "15"
             ]
           },
-          "notes": "Special Molds mapping applied (Mold Size -> Shoe Sizes)"
+          "notes": "Merged from Special Molds sheet and inventory defaults"
         }
       }
     },
@@ -10610,7 +10610,6 @@
           "componentName": "OS1 (Top)",
           "soleType": "Outsole",
           "moldSizeToShoeSizes": {
-            "13.5": null,
             "3.5": [
               "3.5",
               "4"
@@ -10651,11 +10650,12 @@
               "12.5",
               "13"
             ],
+            "13.5": null,
             "14": [
               "14"
             ]
           },
-          "notes": "Special Molds mapping applied (Mold Size -> Shoe Sizes)"
+          "notes": "Merged from Special Molds sheet and inventory defaults"
         },
         "MS1": {
           "componentName": "MS1 (Top)",
@@ -10705,7 +10705,7 @@
               "14"
             ]
           },
-          "notes": "Special Molds mapping applied (Mold Size -> Shoe Sizes)"
+          "notes": "Merged from Special Molds sheet and inventory defaults"
         },
         "MS2": {
           "componentName": "MS2 (Bottom)",
@@ -10755,7 +10755,7 @@
               "14"
             ]
           },
-          "notes": "Special Molds mapping applied (Mold Size -> Shoe Sizes)"
+          "notes": "Merged from Special Molds sheet and inventory defaults"
         },
         "MS3": {
           "componentName": "MS3 (Heel)",
@@ -10805,7 +10805,7 @@
               "14"
             ]
           },
-          "notes": "Special Molds mapping applied (Mold Size -> Shoe Sizes)"
+          "notes": "Merged from Special Molds sheet and inventory defaults"
         }
       }
     },
@@ -11203,7 +11203,7 @@
               "14"
             ]
           },
-          "notes": "Special Molds mapping applied (Mold Size -> Shoe Sizes)"
+          "notes": "Merged from Special Molds sheet and inventory defaults"
         },
         "MS1": {
           "componentName": "MS1 (Top)",
@@ -11253,7 +11253,7 @@
               "14"
             ]
           },
-          "notes": "Special Molds mapping applied (Mold Size -> Shoe Sizes)"
+          "notes": "Merged from Special Molds sheet and inventory defaults"
         },
         "MS3": {
           "componentName": "MS3 (Heel)",
@@ -11303,7 +11303,7 @@
               "14"
             ]
           },
-          "notes": "Special Molds mapping applied (Mold Size -> Shoe Sizes)"
+          "notes": "Merged from Special Molds sheet and inventory defaults"
         }
       }
     },
@@ -16341,7 +16341,6 @@
           "componentName": "OS1 (Top)",
           "soleType": "Outsole",
           "moldSizeToShoeSizes": {
-            "13.5": null,
             "3.5": [
               "3.5",
               "4"
@@ -16382,17 +16381,17 @@
               "12.5",
               "13"
             ],
+            "13.5": null,
             "14": [
               "14"
             ]
           },
-          "notes": "Special Molds mapping applied (Mold Size -> Shoe Sizes)"
+          "notes": "Merged from Special Molds sheet and inventory defaults"
         },
         "MS1": {
           "componentName": "MS1 (Top)",
           "soleType": "Midsole",
           "moldSizeToShoeSizes": {
-            "13.5": null,
             "3.5": [
               "3.5",
               "4"
@@ -16433,17 +16432,17 @@
               "12.5",
               "13"
             ],
+            "13.5": null,
             "14": [
               "14"
             ]
           },
-          "notes": "Special Molds mapping applied (Mold Size -> Shoe Sizes)"
+          "notes": "Merged from Special Molds sheet and inventory defaults"
         },
         "MS2": {
           "componentName": "MS2 (Bottom)",
           "soleType": "Midsole",
           "moldSizeToShoeSizes": {
-            "13.5": null,
             "3.5": [
               "3.5",
               "4"
@@ -16484,17 +16483,17 @@
               "12.5",
               "13"
             ],
+            "13.5": null,
             "14": [
               "14"
             ]
           },
-          "notes": "Special Molds mapping applied (Mold Size -> Shoe Sizes)"
+          "notes": "Merged from Special Molds sheet and inventory defaults"
         },
         "MS3": {
           "componentName": "MS3 (Heel)",
           "soleType": "Midsole",
           "moldSizeToShoeSizes": {
-            "13.5": null,
             "3.5": [
               "3.5",
               "4"
@@ -16535,11 +16534,12 @@
               "12.5",
               "13"
             ],
+            "13.5": null,
             "14": [
               "14"
             ]
           },
-          "notes": "Special Molds mapping applied (Mold Size -> Shoe Sizes)"
+          "notes": "Merged from Special Molds sheet and inventory defaults"
         }
       }
     },
@@ -27942,7 +27942,7 @@
               "14"
             ]
           },
-          "notes": "Special Molds mapping applied (Mold Size -> Shoe Sizes)"
+          "notes": "Merged from Special Molds sheet and inventory defaults"
         },
         "MS2": {
           "componentName": "MS2 (Bottom - Blocker)",
@@ -28000,7 +28000,7 @@
               "14"
             ]
           },
-          "notes": "Special Molds mapping applied (Mold Size -> Shoe Sizes)"
+          "notes": "Merged from Special Molds sheet and inventory defaults"
         },
         "OS1": {
           "componentName": "OS1 (Top)",
@@ -28058,7 +28058,7 @@
               "14"
             ]
           },
-          "notes": "Special Molds mapping applied (Mold Size -> Shoe Sizes)"
+          "notes": "Merged from Special Molds sheet and inventory defaults"
         }
       }
     },
