@@ -2029,50 +2029,6 @@
                   }
                 },
                 "comments": null
-              },
-              {
-                "vendorId": "FTY000480",
-                "moldShopCode": "GUOSHENG",
-                "initSeason": "S24",
-                "lastDemandSeason": "F26",
-                "capacity": {
-                  "dailyOutput": 90.0,
-                  "actualOutput": null
-                },
-                "asset": {
-                  "moldCost": 1300.0,
-                  "ownership": "WWW",
-                  "condition": "1. Good",
-                  "conditionNote": "OK"
-                },
-                "inventory": {
-                  "totalMoldQty": 29,
-                  "qtyByMoldSize": {
-                    "3": 1,
-                    "3.5": 1,
-                    "4": 1,
-                    "4.5": 1,
-                    "5": 1,
-                    "5.5": 1,
-                    "6": 1,
-                    "6.5": 1,
-                    "7": 1,
-                    "7.5": 2,
-                    "8": 2,
-                    "8.5": 2,
-                    "9": 2,
-                    "9.5": 2,
-                    "10": 2,
-                    "10.5": 2,
-                    "11": 1,
-                    "11.5": 1,
-                    "12": 1,
-                    "12.5": 1,
-                    "13.5": 1,
-                    "14.5": 1
-                  }
-                },
-                "comments": null
               }
             ]
           },
@@ -2142,6 +2098,84 @@
                     "9.5": 1,
                     "10": 1,
                     "10.5": 1,
+                    "11": 1,
+                    "11.5": 1,
+                    "12": 1,
+                    "12.5": 1,
+                    "13.5": 1,
+                    "14.5": 1
+                  }
+                },
+                "comments": null
+              }
+            ]
+          },
+          "MS2-1": {
+            "displayName": "MS2-1 (Bottom - Blocker)",
+            "compound": "Peba",
+            "notes": null,
+            "sizingRules": {
+              "moldSizeToShoeSizes": {
+                "3": null,
+                "3.5": null,
+                "4": null,
+                "4.5": null,
+                "5": null,
+                "5.5": null,
+                "6": null,
+                "6.5": null,
+                "7": null,
+                "7.5": null,
+                "8": null,
+                "8.5": null,
+                "9": null,
+                "9.5": null,
+                "10": null,
+                "10.5": null,
+                "11": null,
+                "11.5": null,
+                "12": null,
+                "12.5": null,
+                "13.5": null,
+                "14.5": null
+              }
+            },
+            "sourcingRules": [],
+            "molds": [
+              {
+                "vendorId": "FTY000480",
+                "moldShopCode": "GUOSHENG",
+                "initSeason": "S24",
+                "lastDemandSeason": "F26",
+                "capacity": {
+                  "dailyOutput": 90.0,
+                  "actualOutput": null
+                },
+                "asset": {
+                  "moldCost": 1300.0,
+                  "ownership": "WWW",
+                  "condition": "1. Good",
+                  "conditionNote": "OK"
+                },
+                "inventory": {
+                  "totalMoldQty": 29,
+                  "qtyByMoldSize": {
+                    "3": 1,
+                    "3.5": 1,
+                    "4": 1,
+                    "4.5": 1,
+                    "5": 1,
+                    "5.5": 1,
+                    "6": 1,
+                    "6.5": 1,
+                    "7": 1,
+                    "7.5": 2,
+                    "8": 2,
+                    "8.5": 2,
+                    "9": 2,
+                    "9.5": 2,
+                    "10": 2,
+                    "10.5": 2,
                     "11": 1,
                     "11.5": 1,
                     "12": 1,
@@ -4170,7 +4204,41 @@
                   }
                 },
                 "comments": null
-              },
+              }
+            ]
+          },
+          "MS1-1": {
+            "displayName": "MS1-1 (Top - Blocker)",
+            "compound": "Peba",
+            "notes": null,
+            "sizingRules": {
+              "moldSizeToShoeSizes": {
+                "3": null,
+                "3.5": null,
+                "4": null,
+                "4.5": null,
+                "5": null,
+                "5.5": null,
+                "6": null,
+                "6.5": null,
+                "7": null,
+                "7.5": null,
+                "8": null,
+                "8.5": null,
+                "9": null,
+                "9.5": null,
+                "10": null,
+                "10.5": null,
+                "11": null,
+                "11.5": null,
+                "12": null,
+                "12.5": null,
+                "13.5": null,
+                "14.5": null
+              }
+            },
+            "sourcingRules": [],
+            "molds": [
               {
                 "vendorId": "FTY000480",
                 "moldShopCode": "GUOSHENG",
@@ -4689,7 +4757,41 @@
                   }
                 },
                 "comments": "F26 new mold"
-              },
+              }
+            ]
+          },
+          "MS1-1": {
+            "displayName": "MS1-1 (Top - Blocker)",
+            "compound": "TPEE",
+            "notes": null,
+            "sizingRules": {
+              "moldSizeToShoeSizes": {
+                "3": null,
+                "3.5": null,
+                "4": null,
+                "4.5": null,
+                "5": null,
+                "5.5": null,
+                "6": null,
+                "6.5": null,
+                "7": null,
+                "7.5": null,
+                "8": null,
+                "8.5": null,
+                "9": null,
+                "9.5": null,
+                "10": null,
+                "10.5": null,
+                "11": null,
+                "11.5": null,
+                "12": null,
+                "12.5": null,
+                "13.5": null,
+                "14.5": null
+              }
+            },
+            "sourcingRules": [],
+            "molds": [
               {
                 "vendorId": "FTY000480",
                 "moldShopCode": "GUOSHENG",
@@ -4811,7 +4913,41 @@
                   }
                 },
                 "comments": "F26 new mold"
-              },
+              }
+            ]
+          },
+          "MS2-1": {
+            "displayName": "MS2-1 (Bottom - Blocker)",
+            "compound": "TPEE",
+            "notes": null,
+            "sizingRules": {
+              "moldSizeToShoeSizes": {
+                "3": null,
+                "3.5": null,
+                "4": null,
+                "4.5": null,
+                "5": null,
+                "5.5": null,
+                "6": null,
+                "6.5": null,
+                "7": null,
+                "7.5": null,
+                "8": null,
+                "8.5": null,
+                "9": null,
+                "9.5": null,
+                "10": null,
+                "10.5": null,
+                "11": null,
+                "11.5": null,
+                "12": null,
+                "12.5": null,
+                "13.5": null,
+                "14.5": null
+              }
+            },
+            "sourcingRules": [],
+            "molds": [
               {
                 "vendorId": "FTY000480",
                 "moldShopCode": "GUOSHENG",
@@ -5032,7 +5168,41 @@
                   }
                 },
                 "comments": "F26 new mold"
-              },
+              }
+            ]
+          },
+          "MS1-1": {
+            "displayName": "MS1-1 (Top - Blocker)",
+            "compound": "SCF",
+            "notes": null,
+            "sizingRules": {
+              "moldSizeToShoeSizes": {
+                "3.5": null,
+                "4": null,
+                "4.5": null,
+                "5": null,
+                "5.5": null,
+                "6": null,
+                "6.5": null,
+                "7": null,
+                "7.5": null,
+                "8": null,
+                "8.5": null,
+                "9": null,
+                "9.5": null,
+                "10": null,
+                "10.5": null,
+                "11": null,
+                "11.5": null,
+                "12": null,
+                "12.5": null,
+                "13": null,
+                "14": null,
+                "15": null
+              }
+            },
+            "sourcingRules": [],
+            "molds": [
               {
                 "vendorId": "FTY000480",
                 "moldShopCode": "GUOSHENG",
@@ -5212,10 +5382,7 @@
                 "12.5": null,
                 "13": null,
                 "14": null,
-                "15": null,
-                "3": null,
-                "13.5": null,
-                "14.5": null
+                "15": null
               }
             },
             "sourcingRules": [],
@@ -5265,50 +5432,6 @@
                 "comments": "F26 new mold, GS onhand mold qty is 57 sets (remark: wrong opened it and have another full sets mold/22sets, if HM/GS have additional mold request could absorb it)"
               },
               {
-                "vendorId": "FTY000480",
-                "moldShopCode": "GUOSHENG",
-                "initSeason": "F26",
-                "lastDemandSeason": "F26",
-                "capacity": {
-                  "dailyOutput": 180.0,
-                  "actualOutput": null
-                },
-                "asset": {
-                  "moldCost": 1000.0,
-                  "ownership": "WWW",
-                  "condition": "1. Good",
-                  "conditionNote": "OK"
-                },
-                "inventory": {
-                  "totalMoldQty": 22,
-                  "qtyByMoldSize": {
-                    "3.5": 1,
-                    "4": 1,
-                    "4.5": 1,
-                    "5": 1,
-                    "5.5": 1,
-                    "6": 1,
-                    "6.5": 1,
-                    "7": 1,
-                    "7.5": 1,
-                    "8": 1,
-                    "8.5": 1,
-                    "9": 1,
-                    "9.5": 1,
-                    "10": 1,
-                    "10.5": 1,
-                    "11": 1,
-                    "11.5": 1,
-                    "12": 1,
-                    "12.5": 1,
-                    "13": 1,
-                    "14": 1,
-                    "15": 1
-                  }
-                },
-                "comments": "F26 new mold"
-              },
-              {
                 "vendorId": null,
                 "moldShopCode": "HONGSHENG",
                 "initSeason": "F26",
@@ -5352,6 +5475,87 @@
                 },
                 "comments": "F26 new mold",
                 "vendorName": "JIATAI-VN(HONGCHEN)"
+              }
+            ]
+          },
+          "MS1-1": {
+            "displayName": "MS1-1 (Top - Blocker)",
+            "compound": "SCF",
+            "notes": null,
+            "sizingRules": {
+              "moldSizeToShoeSizes": {
+                "3.5": null,
+                "4": null,
+                "4.5": null,
+                "5": null,
+                "5.5": null,
+                "6": null,
+                "6.5": null,
+                "7": null,
+                "7.5": null,
+                "8": null,
+                "8.5": null,
+                "9": null,
+                "9.5": null,
+                "10": null,
+                "10.5": null,
+                "11": null,
+                "11.5": null,
+                "12": null,
+                "12.5": null,
+                "13": null,
+                "14": null,
+                "15": null,
+                "3": null,
+                "13.5": null,
+                "14.5": null
+              }
+            },
+            "sourcingRules": [],
+            "molds": [
+              {
+                "vendorId": "FTY000480",
+                "moldShopCode": "GUOSHENG",
+                "initSeason": "F26",
+                "lastDemandSeason": "F26",
+                "capacity": {
+                  "dailyOutput": 180.0,
+                  "actualOutput": null
+                },
+                "asset": {
+                  "moldCost": 1000.0,
+                  "ownership": "WWW",
+                  "condition": "1. Good",
+                  "conditionNote": "OK"
+                },
+                "inventory": {
+                  "totalMoldQty": 22,
+                  "qtyByMoldSize": {
+                    "3.5": 1,
+                    "4": 1,
+                    "4.5": 1,
+                    "5": 1,
+                    "5.5": 1,
+                    "6": 1,
+                    "6.5": 1,
+                    "7": 1,
+                    "7.5": 1,
+                    "8": 1,
+                    "8.5": 1,
+                    "9": 1,
+                    "9.5": 1,
+                    "10": 1,
+                    "10.5": 1,
+                    "11": 1,
+                    "11.5": 1,
+                    "12": 1,
+                    "12.5": 1,
+                    "13": 1,
+                    "14": 1,
+                    "15": 1
+                  }
+                },
+                "comments": "F26 new mold"
               },
               {
                 "vendorId": "FTY000575",
@@ -5794,50 +5998,6 @@
                 "comments": "F26 new mold"
               },
               {
-                "vendorId": "FTY000480",
-                "moldShopCode": "GUOSHENG",
-                "initSeason": "F26",
-                "lastDemandSeason": "F26",
-                "capacity": {
-                  "dailyOutput": 180.0,
-                  "actualOutput": null
-                },
-                "asset": {
-                  "moldCost": 1000.0,
-                  "ownership": "WWW",
-                  "condition": "1. Good",
-                  "conditionNote": "OK"
-                },
-                "inventory": {
-                  "totalMoldQty": 22,
-                  "qtyByMoldSize": {
-                    "3.5": 1,
-                    "4": 1,
-                    "4.5": 1,
-                    "5": 1,
-                    "5.5": 1,
-                    "6": 1,
-                    "6.5": 1,
-                    "7": 1,
-                    "7.5": 1,
-                    "8": 1,
-                    "8.5": 1,
-                    "9": 1,
-                    "9.5": 1,
-                    "10": 1,
-                    "10.5": 1,
-                    "11": 1,
-                    "11.5": 1,
-                    "12": 1,
-                    "12.5": 1,
-                    "13": 1,
-                    "14": 1,
-                    "15": 1
-                  }
-                },
-                "comments": "F26 new mold"
-              },
-              {
                 "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "initSeason": "F26",
@@ -5925,6 +6085,84 @@
                 },
                 "comments": "F26 new mold",
                 "vendorName": "JIATAI-VN(HONGCHEN)"
+              }
+            ]
+          },
+          "MS1-1": {
+            "displayName": "MS1-1 (Top - Blocker)",
+            "compound": "SCF",
+            "notes": null,
+            "sizingRules": {
+              "moldSizeToShoeSizes": {
+                "3.5": null,
+                "4": null,
+                "4.5": null,
+                "5": null,
+                "5.5": null,
+                "6": null,
+                "6.5": null,
+                "7": null,
+                "7.5": null,
+                "8": null,
+                "8.5": null,
+                "9": null,
+                "9.5": null,
+                "10": null,
+                "10.5": null,
+                "11": null,
+                "11.5": null,
+                "12": null,
+                "12.5": null,
+                "13": null,
+                "14": null,
+                "15": null
+              }
+            },
+            "sourcingRules": [],
+            "molds": [
+              {
+                "vendorId": "FTY000480",
+                "moldShopCode": "GUOSHENG",
+                "initSeason": "F26",
+                "lastDemandSeason": "F26",
+                "capacity": {
+                  "dailyOutput": 180.0,
+                  "actualOutput": null
+                },
+                "asset": {
+                  "moldCost": 1000.0,
+                  "ownership": "WWW",
+                  "condition": "1. Good",
+                  "conditionNote": "OK"
+                },
+                "inventory": {
+                  "totalMoldQty": 22,
+                  "qtyByMoldSize": {
+                    "3.5": 1,
+                    "4": 1,
+                    "4.5": 1,
+                    "5": 1,
+                    "5.5": 1,
+                    "6": 1,
+                    "6.5": 1,
+                    "7": 1,
+                    "7.5": 1,
+                    "8": 1,
+                    "8.5": 1,
+                    "9": 1,
+                    "9.5": 1,
+                    "10": 1,
+                    "10.5": 1,
+                    "11": 1,
+                    "11.5": 1,
+                    "12": 1,
+                    "12.5": 1,
+                    "13": 1,
+                    "14": 1,
+                    "15": 1
+                  }
+                },
+                "comments": "F26 new mold"
               },
               {
                 "vendorId": "FTY000575",
@@ -24297,8 +24535,72 @@
               }
             ]
           },
+          "MS2-1": {
+            "displayName": "MS2-1 (Bottom - Blocker)",
+            "compound": "TPEE",
+            "notes": null,
+            "sizingRules": {
+              "moldSizeToShoeSizes": {
+                "3.5": null,
+                "4.5": null,
+                "5.5": null,
+                "6.5": null,
+                "7.5": null,
+                "8.5": null,
+                "9.5": null,
+                "10": null,
+                "10.5": null,
+                "11": null,
+                "11.5": null,
+                "12": null,
+                "12.5": null,
+                "13": null,
+                "14": null
+              }
+            },
+            "sourcingRules": [],
+            "molds": [
+              {
+                "vendorId": "FTY000480",
+                "moldShopCode": "GUOSHENG",
+                "initSeason": "S25",
+                "lastDemandSeason": "S26",
+                "capacity": {
+                  "dailyOutput": 35.0,
+                  "actualOutput": null
+                },
+                "asset": {
+                  "moldCost": 1170.0,
+                  "ownership": "WWW",
+                  "condition": "2. Need Assement",
+                  "conditionNote": "Re-assement if have demand"
+                },
+                "inventory": {
+                  "totalMoldQty": 25,
+                  "qtyByMoldSize": {
+                    "3.5": 1,
+                    "4.5": 1,
+                    "5.5": 2,
+                    "6.5": 3,
+                    "7.5": 3,
+                    "8.5": 4,
+                    "9.5": 2,
+                    "10": 1,
+                    "10.5": 1,
+                    "11": 2,
+                    "11.5": 1,
+                    "12": 1,
+                    "12.5": 1,
+                    "13": 1,
+                    "14": 1
+                  }
+                },
+                "comments": null
+              }
+            ]
+          },
           "MS2": {
-            "displayName": "MS2 (Bottom - Blocker)",
+            "displayName": "MS2 (Bottom)",
             "compound": "TPEE",
             "notes": null,
             "sizingRules": {
@@ -24367,43 +24669,6 @@
               }
             ],
             "molds": [
-              {
-                "vendorId": "FTY000480",
-                "moldShopCode": "GUOSHENG",
-                "initSeason": "S25",
-                "lastDemandSeason": "S26",
-                "capacity": {
-                  "dailyOutput": 35.0,
-                  "actualOutput": null
-                },
-                "asset": {
-                  "moldCost": 1170.0,
-                  "ownership": "WWW",
-                  "condition": "2. Need Assement",
-                  "conditionNote": "Re-assement if have demand"
-                },
-                "inventory": {
-                  "totalMoldQty": 25,
-                  "qtyByMoldSize": {
-                    "3.5": 1,
-                    "4.5": 1,
-                    "5.5": 2,
-                    "6.5": 3,
-                    "7.5": 3,
-                    "8.5": 4,
-                    "9.5": 2,
-                    "10": 1,
-                    "10.5": 1,
-                    "11": 2,
-                    "11.5": 1,
-                    "12": 1,
-                    "12.5": 1,
-                    "13": 1,
-                    "14": 1
-                  }
-                },
-                "comments": null
-              },
               {
                 "vendorId": "FTY000480",
                 "moldShopCode": "GUOSHENG",
@@ -24638,7 +24903,41 @@
                   }
                 },
                 "comments": null
-              },
+              }
+            ]
+          },
+          "MS1-1": {
+            "displayName": "MS1-1 (Top - Blocker)",
+            "compound": "PWRRUN PB",
+            "notes": null,
+            "sizingRules": {
+              "moldSizeToShoeSizes": {
+                "3.5": null,
+                "4": null,
+                "4.5": null,
+                "5": null,
+                "5.5": null,
+                "6": null,
+                "6.5": null,
+                "7": null,
+                "7.5": null,
+                "8": null,
+                "8.5": null,
+                "9": null,
+                "9.5": null,
+                "10": null,
+                "10.5": null,
+                "11": null,
+                "11.5": null,
+                "12": null,
+                "12.5": null,
+                "13": null,
+                "14": null,
+                "15": null
+              }
+            },
+            "sourcingRules": [],
+            "molds": [
               {
                 "vendorId": "FTY000480",
                 "moldShopCode": "GUOSHENG",
@@ -25401,50 +25700,6 @@
                 "comments": "GS open 22pcs molds by themselves"
               },
               {
-                "vendorId": "FTY000773",
-                "moldShopCode": "GUOSHENG",
-                "initSeason": "F25",
-                "lastDemandSeason": "S26",
-                "capacity": {
-                  "dailyOutput": 45.0,
-                  "actualOutput": null
-                },
-                "asset": {
-                  "moldCost": 0.0,
-                  "ownership": "WWW",
-                  "condition": "1. Good",
-                  "conditionNote": "OK"
-                },
-                "inventory": {
-                  "totalMoldQty": 22,
-                  "qtyByMoldSize": {
-                    "3.5": 1,
-                    "4": 1,
-                    "4.5": 1,
-                    "5": 1,
-                    "5.5": 1,
-                    "6": 1,
-                    "6.5": 1,
-                    "7": 1,
-                    "7.5": 1,
-                    "8": 1,
-                    "8.5": 1,
-                    "9": 1,
-                    "9.5": 1,
-                    "10": 1,
-                    "10.5": 1,
-                    "11": 1,
-                    "11.5": 1,
-                    "12": 1,
-                    "12.5": 1,
-                    "13": 1,
-                    "14": 1,
-                    "15": 1
-                  }
-                },
-                "comments": "GS open 22pcs molds by themselves"
-              },
-              {
                 "vendorId": "FTY000575",
                 "moldShopCode": "HONGSHENG",
                 "initSeason": "F25",
@@ -25487,6 +25742,84 @@
                   }
                 },
                 "comments": null
+              }
+            ]
+          },
+          "MS1-1": {
+            "displayName": "MS1-1 (Top - Blocker)",
+            "compound": "Ever Run",
+            "notes": null,
+            "sizingRules": {
+              "moldSizeToShoeSizes": {
+                "3.5": null,
+                "4": null,
+                "4.5": null,
+                "5": null,
+                "5.5": null,
+                "6": null,
+                "6.5": null,
+                "7": null,
+                "7.5": null,
+                "8": null,
+                "8.5": null,
+                "9": null,
+                "9.5": null,
+                "10": null,
+                "10.5": null,
+                "11": null,
+                "11.5": null,
+                "12": null,
+                "12.5": null,
+                "13": null,
+                "14": null,
+                "15": null
+              }
+            },
+            "sourcingRules": [],
+            "molds": [
+              {
+                "vendorId": "FTY000773",
+                "moldShopCode": "GUOSHENG",
+                "initSeason": "F25",
+                "lastDemandSeason": "S26",
+                "capacity": {
+                  "dailyOutput": 45.0,
+                  "actualOutput": null
+                },
+                "asset": {
+                  "moldCost": 0.0,
+                  "ownership": "WWW",
+                  "condition": "1. Good",
+                  "conditionNote": "OK"
+                },
+                "inventory": {
+                  "totalMoldQty": 22,
+                  "qtyByMoldSize": {
+                    "3.5": 1,
+                    "4": 1,
+                    "4.5": 1,
+                    "5": 1,
+                    "5.5": 1,
+                    "6": 1,
+                    "6.5": 1,
+                    "7": 1,
+                    "7.5": 1,
+                    "8": 1,
+                    "8.5": 1,
+                    "9": 1,
+                    "9.5": 1,
+                    "10": 1,
+                    "10.5": 1,
+                    "11": 1,
+                    "11.5": 1,
+                    "12": 1,
+                    "12.5": 1,
+                    "13": 1,
+                    "14": 1,
+                    "15": 1
+                  }
+                },
+                "comments": "GS open 22pcs molds by themselves"
               },
               {
                 "vendorId": "FTY000575",
