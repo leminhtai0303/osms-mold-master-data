@@ -1,4 +1,9 @@
-# Mold Management Excel — Owner Setup Guide (v5)
+# Mold Management Excel — Owner Setup Guide (v6)
+
+Aligned with the Bottoming Mold Master Data Standard v3.0/v3.1
+(see `docs/reference/`). Terminology: Mold ID = governed component
+identifier {MoldFamily}-{Type}-{Position}(-B); component sheets and
+Summary col A use the SHORT form (e.g. MS-PRI-B).
 
 ============================================================
 1. CORE PRINCIPLE
@@ -27,6 +32,9 @@ Python only performs:
 
 Pre-configure:
 
+HEADER
+- A1: "Mold Family:"   A2: "Brands:"  (B values written by Python)
+
 MOLD SUMMARY TABLE (A:P)
 
 - Lookup formulas:
@@ -41,20 +49,24 @@ MOLD SUMMARY TABLE (A:P)
         SUM(INDEX(INDIRECT("'"&sh&"'!A:ZZ"),0,col))),
     "")
 
-    ⚠ sh = comp (column A value only — no "MoldInv_" prefix).
-      Sheet name must match the Component Code exactly.
+    ⚠ sh = comp (column A value only).
+      Component sheet name must match the short Mold ID in col A exactly.
 
-- Status Check formula (col G):
+- Check formula (col G):
     =IF(OR(A7<>"",D7<>""),
       IFS(O7,"Missing Keys", P7,"Duplicate Keys", TRUE,"OK"),
     "")
 
+    NOTE: column header is "Check" — a data-entry validation flag.
+    Do not name it "Status": the standard reserves Status for the
+    asset lifecycle (Active / Inactive / In Repair / Retired).
+
 - Hidden flag columns O, P:
-    O → OR(ISBLANK(A7), ISBLANK(D7))
-    P → COUNTIFS($B$7:$B$31,$B7,$D$7:$D$31,$D7)>1
+    O → =OR(ISBLANK(A7), ISBLANK(D7))
+    P → =COUNTIFS($A$7:$A$31,$A7,$D$7:$D$31,$D7)>1
 
 - Data validation:
-    A7:A31  → MoldComponentList
+    A7:A31  → MoldComponentList   (the 8 short Mold IDs — see 2.3)
     D7:D31  → VendorList
     H7:H31  → MoldOwnership
     I7:I31  → MoldCondition
@@ -81,19 +93,22 @@ STYLES SECTION (R:T)
 
 
 ------------------------------------------------------------
-2.2 {ComponentCode} Sheet Template
+2.2 {Component} Sheet Template
 ------------------------------------------------------------
 
 This is the master template sheet that Python copies once per component.
-Named "MoldInv_{Component}" in the template file before copying — Python
-renames each copy to the component code (e.g. "OS1", "MS1").
+It is named "{Component}" in the template file — Python renames each
+copy to the component's SHORT Mold ID (e.g. "OS-PRI", "MS-BOT-B") and
+deletes the "{Component}" prototype from the output file.
 
 Pre-configure:
 
 HEADER (rows 1–5)
 - A1: "Mold Inventory"  (static label)
-- A2: "Mold Code:"  A3: "SoleType:"  A4: "Component Name:"  A5: "Compound:"
-  (B column values written by Python)
+- A2: "Mold Family:"  A3: "Mold ID:"  A4: "Component Description:"
+  A5: "Design Compound:"
+  (B column values written by Python; B3 = FULL Mold ID,
+   e.g. SA-2301-MS-PRI-B)
 
 INSTRUCTION ROW (row 7)
 - A7: inventory editing instruction (static text, locked)
@@ -101,9 +116,8 @@ INSTRUCTION ROW (row 7)
 
 COLUMN HEADER ROW (row 8)
 INVENTORY:
-- A8: "MoldSize"  B8: "ShoeSizes"  (static, locked)
-- C8:F8: vendor header dropdowns → validation = VendorList  (Python writes values)
-- G8: "TotalQty"  (static, locked)
+- A8: "Sizes"  (static, locked)
+- B8:E8: vendor header dropdowns → validation = VendorList  (Python writes values)
 
 SOURCING:
 - H8: "Factory Name"
@@ -114,13 +128,12 @@ SOURCING:
 - M8: "Vendor Code"
   All static text, locked.
 
-DATA ROWS (rows 9–43, mold sizes 1.0 → 18.0)
+DATA ROWS (rows 9–43)
 
-INVENTORY SIDE A9:G43:
-- A9:A43: fixed mold size list 1, 1.5, 2, … 18  (locked)
-- B9:B43: ShoeSizes free text  (unlock)
-- C9:F43: qty cells, validation ≥ 0  (unlock)
-- G9:G43: TotalQty formula =SUM(C9:F9)  (locked)
+INVENTORY SIDE A9:E43:
+- A9:A43: size-coverage patterns, comma-separated shoe sizes
+  (e.g. "3.5, 4") — one row per distinct pattern  (unlock; Python writes)
+- B9:E43: qty cells, validation ≥ 0  (unlock)
 
 SOURCING SIDE H9:M43:
 - H9:H43: Factory Name  → validation = FactoryList  (unlock)
@@ -131,8 +144,8 @@ SOURCING SIDE H9:M43:
 - M9:M43: XLOOKUP(K9, _dimVendor[Vendor Short Name], _dimVendor[Vendor ID], "")     (locked)
 
 Conditional formatting:
-- C9:F43: highlight red if invalid number or negative
-- Optional: highlight if qty > 0 but ShoeSizes (col B) is blank
+- B9:E43: highlight red if invalid number or negative
+- Optional: highlight if qty > 0 but Sizes (col A) is blank
 
 
 ------------------------------------------------------------
@@ -140,13 +153,30 @@ Conditional formatting:
 ------------------------------------------------------------
 
 - Power Query connected to master_references.xlsx
-- Tables: _dimMoldHierarchies, _dimVendor, _dimMoldShop,
-          _dimMoldOwnership, _dimMoldCondition, _dimFactory
+- Tables: _dimMoldHierarchies, _dimVendor, _dimMoldOwnership,
+          _dimMoldCondition, _dimFactory
 - _dimVendor MUST have a "Vendor ID" column (FTY number)
   — required by the M column XLOOKUP on component sheets
 - Named ranges defined (see spec section 2)
 - Hidden and protected
 - DO NOT allow editing
+
+_dimMoldHierarchies MUST contain exactly the 8 standard rows
+(Component Code = short Mold ID; set once by scripts/update_template_v3.py):
+
+  OS-PRI     Outsole Primary                Outsole
+  OS-BOT     Outsole Bottom Layer           Outsole
+  MS-PRI     Midsole Primary                Midsole
+  MS-PRI-B   Midsole Primary Blocker        Midsole
+  MS-BOT     Midsole Bottom Layer           Midsole
+  MS-BOT-B   Midsole Bottom Layer Blocker   Midsole
+  MS-HEEL    Midsole Heel                   Midsole
+  OT-PRI     Other Component                Other
+
+⚠ If this table is fed by Power Query from master_references.xlsx,
+  update the upstream file with the same 8 rows — otherwise a refresh
+  restores the legacy codes (OS1, MS1, ...) and breaks the Summary
+  lookups and dropdown.
 
 
 ============================================================
@@ -175,7 +205,7 @@ Open a fresh copy of the template for each family.
 
 Disable protection on:
   Summary
-  MoldInv_{Component} (template sheet, before copying)
+  {Component} (template sheet, before copying)
   Each copied component sheet
 
 ------------------------------------------------------------
@@ -185,10 +215,10 @@ Disable protection on:
 Write:
   B1   Family code
   B2   Brand name(s)
-  A7:A31  Component codes       [col A, unlocked area]
-  D7:D31  Vendor short names    [col D, unlocked area]
-  H7:N31  Operational data      (Mold Ownership, Condition, Shop,
-                                  Init Season, Daily Output, Mold Cost, Comments)
+  A7:A31  Short Mold IDs          [col A, must equal component sheet names]
+  D7:D31  Vendor short names      [col D]
+  H7:N31  Operational data        (Mold Ownership, Condition, Shop,
+                                   Init Season, Daily Output, Mold Cost, Comments)
 
 Styles section:
   R7:R{7+n-1}   Style names
@@ -200,31 +230,32 @@ Do NOT touch:
   Hidden columns O, P
 
 ------------------------------------------------------------
-3.5 DATA INJECTION — {ComponentCode} sheets
+3.5 DATA INJECTION — {MoldID} sheets
 ------------------------------------------------------------
 
-For each component in the family:
-  1. Copy MoldInv_{Component} template sheet
-  2. Rename copy to the component code (e.g. "OS1")
+For each component (Mold ID) in the family:
+  1. Copy the {Component} template sheet
+  2. Rename copy to the SHORT Mold ID (e.g. "MS-PRI-B")
   3. Unlock copied sheet
-  4. Write header values: B2 (family), B3 (sole type), B4 (name), B5 (compound)
-  5. Write shoe sizes B9:B43 from sizingRules.moldSizeToShoeSizes
-  6. Write vendor headers C8:F8 (up to 4 vendor short names)
-  7. Write inventory quantities into the matching vendor column × mold size row
+  4. Write header values: B2 (family), B3 (full Mold ID),
+     B4 (component description), B5 (design compound)
+  5. Write size patterns A9:A43 from assets[*].sizeCoverage
+  6. Write vendor headers B8:E8 (up to 4 vendor short names)
+  7. Write inventory quantities into the matching vendor column × pattern row
   8. Write sourcing rules:
-       H9:H{9+m-1}  factory names  (resolve from vendorId → factory lookup)
+       H9:H{9+m-1}  factory names  (resolve from factoryNumber lookup)
        K9:K{9+m-1}  vendor short names  (resolve from vendorId reference)
      I, J, L, M columns auto-fill via XLOOKUP — Python does not touch them
 
 Do NOT touch:
-  Mold size column A, instruction rows, header row 8 (sourcing side),
-  G TotalQty formulas, I/J/L/M XLOOKUP formula columns
+  Instruction rows, header row 8 (sourcing side),
+  I/J/L/M XLOOKUP formula columns
 
 ------------------------------------------------------------
 3.6 Delete template sheet
 ------------------------------------------------------------
 
-After all component copies are created, delete "MoldInv_{Component}".
+After all component copies are created, delete "{Component}".
 
 ------------------------------------------------------------
 3.7 RE-LOCK and SAVE
@@ -240,13 +271,16 @@ Save as .xlsx.
 
 1. Summary TotalQty uses MATCH(vendorShortName, componentSheet!row8)
    → Vendor short name in Summary col D MUST exactly match
-     the vendor header written by Python to C8:F8 on the component sheet.
+     the vendor header written by Python to B8:E8 on the component sheet.
 
-2. Summary F formula uses component code (col A) as the sheet name directly.
-   → Sheet name MUST equal the Component Code. No prefix.
+2. Summary F formula uses the short Mold ID (col A) as the sheet name
+   directly. → Sheet name MUST equal the col A value. No prefix.
 
 3. _dimVendor MUST contain a "Vendor ID" column.
    → Component sheet col M XLOOKUP depends on it.
+
+4. _dimMoldHierarchies MUST contain the 8 standard short Mold IDs.
+   → Summary col A dropdown and B/C lookups depend on it.
 
 
 ============================================================
@@ -256,12 +290,13 @@ Save as .xlsx.
 Owner must verify after each export:
 
 ✅ No red rows in Summary
-✅ TotalQty populated for all rows
-✅ All dropdowns functional
+✅ TotalQty populated for all rows with a vendor
+✅ All dropdowns functional (col A lists OS-PRI … OT-PRI)
 ✅ Sourcing rules visible on each component sheet
 ✅ Styles section populated on Summary
+✅ Component sheets named by short Mold ID; B3 shows the full Mold ID
 ✅ All sheets protected
-✅ MoldInv_{Component} template sheet deleted from output files
+✅ {Component} template sheet deleted from output files
 
 ============================================================
 END OF GUIDE

@@ -1,4 +1,13 @@
-# Mold Management Excel – Final Design Spec (v2)
+# Mold Management Excel – Final Design Spec (v3)
+
+Aligned with the Bottoming Mold Master Data Standard v3.0/v3.1
+(see `docs/reference/` — source of truth for naming and governance).
+
+Two-layer model: the **Mold ID** identifies what a mold produces
+({MoldFamily}-{Type}-{Position}(-B)); the **Physical Asset** is the
+actual mold at a vendor (size coverage, mold set, revision, status).
+In these workbooks each Summary row = one Mold ID at one vendor
+(an asset group); the component sheets hold the per-size detail.
 
 ============================================================
 1. FILE STRUCTURE (PER FAMILY)
@@ -8,12 +17,16 @@ Each Excel file = 1 Mold Family (Source of Truth)
 
 Sheets:
 1. Summary              ← Primary working interface; includes Styles section
-2. {ComponentCode}      ← One sheet per component (e.g. OS1, MS1)
+2. {MoldID}             ← One sheet per component, named by SHORT Mold ID
+                           (e.g. OS-PRI, MS-PRI, MS-BOT-B)
                            Contains both Inventory and Sourcing Rules
-3. _Master_Ref          ← Hidden, query-driven master tables
+3. Notes                ← Free-form notes
+4. _Master_Ref          ← Hidden, query-driven master tables
 
-NOTE: Standalone "Sourcing Rule" and "Styles" sheets have been removed.
-      Their data is now embedded in the sheets above.
+Sheet names use the SHORT Mold ID (family prefix dropped): the family is
+already in the file name and Excel sheet names are limited to 31 chars.
+Full Mold ID = {FileFamily}-{SheetName}, e.g. SA-2301.xlsx / MS-PRI-B
+→ SA-2301-MS-PRI-B.
 
 ------------------------------------------------------------
 
@@ -25,8 +38,8 @@ NOTE: Standalone "Sourcing Rule" and "Styles" sheets have been removed.
 These MUST exist in TEMPLATE and MUST NOT be modified by Python.
 
 Tables:
-  - _Master_Ref._dimMoldHierarchies
-  - _Master_Ref._dimVendor          ← MUST include Vendor ID column
+  - _Master_Ref._dimMoldHierarchies  ← 8 standard short Mold IDs (see 5.3)
+  - _Master_Ref._dimVendor           ← MUST include Vendor ID column
   - _Master_Ref._dimMoldOwnership
   - _Master_Ref._dimMoldCondition
   - _Master_Ref._dimFactory
@@ -50,8 +63,8 @@ Named Ranges:
 3.1 Header Section
 ------------------------------------------------------------
 
-A1: "Mold Code:"   B1: <FamilyCode>    [Python writes B1]
-A2: "Brands:"      B2: <BrandNames>    [Python writes B2]
+A1: "Mold Family:"   B1: <FamilyCode>    [Python writes B1]
+A2: "Brands:"        B2: <BrandNames>    [Python writes B2]
 
 
 ------------------------------------------------------------
@@ -65,19 +78,23 @@ Rows 7–31 = Data (25 rows max)
 Col O  = MissingKeyFlag   [Hidden, formula]
 Col P  = DupFlag          [Hidden, formula]
 
+Each row = ONE Mold ID at ONE vendor (one physical-asset group).
+
 
 ------------------------------------------------------------
 3.3 Mold Summary Column Definitions
 ------------------------------------------------------------
 
-A6  Component Code    [Dropdown → MoldComponentList]
+A6  Mold ID           [Dropdown → MoldComponentList; short form, e.g. MS-PRI-B]
 B6  Sole Type         [Lookup: XLOOKUP(A, _dimMoldHierarchies[Component Code], [Sole Type])]
 C6  Component Name    [Lookup: XLOOKUP(A, _dimMoldHierarchies[Component Code], [Component Name])]
 D6  Vendor Name       [Dropdown → VendorList]
 E6  Location          [Lookup: XLOOKUP(D, _dimVendor[Vendor Short Name], [Location])]
 
 F6  Total Mold Qty    [Formula — see 3.5]
-G6  Status Check      [Formula — see 3.6]
+G6  Check             [Formula — see 3.6; data-entry validation flag.
+                       NOT the asset Status field from the standard —
+                       see 6. Future Extensions]
 
 H6  Mold Ownership    [Dropdown → MoldOwnership]
 I6  Mold Condition    [Dropdown → MoldCondition]
@@ -102,8 +119,8 @@ Users MUST NOT modify structure.
 3.5 Total Mold Qty Formula
 ------------------------------------------------------------
 
-IMPORTANT: Formula references the component sheet by its component code
-           directly (no prefix). Sheet name = value in column A.
+IMPORTANT: Formula references the component sheet by the short Mold ID
+           in column A directly. Sheet name = value in column A.
 
 =IF(G7="OK",
   LET(
@@ -116,13 +133,12 @@ IMPORTANT: Formula references the component sheet by its component code
   ),
 "")
 
-⚠ Previous version used "MoldInv_"&A7 — that prefix has been removed.
-  Any existing files built from the old template must have this formula
-  updated when the component sheet is renamed.
+It finds the vendor's column on the component sheet (header row 8) and
+sums that column's quantities.
 
 
 ------------------------------------------------------------
-3.6 Status Check Formula
+3.6 Check Formula
 ------------------------------------------------------------
 
 =IF(OR(A7<>"", D7<>""),
@@ -131,11 +147,19 @@ IMPORTANT: Formula references the component sheet by its component code
       TRUE, "OK"),
 "")
 
-  Missing Keys  → Component Code or Vendor is blank while the other is filled
-  Duplicate Keys → Same Sole Type + Vendor combination appears more than once
-  OK            → Valid row
+  Missing Keys   → Mold ID or Vendor is blank while the other is filled
+  Duplicate Keys → Same Mold ID + Vendor combination appears more than once
+  OK             → Valid row
 
-Conditional format: row turns RED if Status ≠ "OK"
+Hidden flag columns:
+  O7 → =OR(ISBLANK(A7), ISBLANK(D7))
+  P7 → =COUNTIFS($A$7:$A$31,$A7,$D$7:$D$31,$D7)>1
+
+Conditional format: row turns RED if Check ≠ "OK"
+
+NOTE: this is a data-entry validation flag ("Check"), distinct from the
+asset lifecycle Status (Active / Inactive / In Repair / Retired) defined
+in the standard. Avoid calling this column "Status".
 
 
 ------------------------------------------------------------
@@ -162,12 +186,13 @@ S7:T31  Checkbox columns   1 = used   0 = not used
 - Users may light-edit styles; no heavy validation required
 - No dropdown validation on R column (free text)
 
+One Style → one Mold Family; one Mold Family → many Styles (Standard §9).
 
 ------------------------------------------------------------
 
 
 ============================================================
-4. SHEET: {ComponentCode}
+4. SHEET: {MoldID}  (e.g. OS-PRI, MS-PRI, MS-BOT-B)
 ============================================================
 
 
@@ -175,11 +200,11 @@ S7:T31  Checkbox columns   1 = used   0 = not used
 4.1 Purpose
 ------------------------------------------------------------
 
-One sheet per component in the family (e.g. OS1, MS1, MS2).
-Sheet name = Component Code exactly (e.g. "OS1").
+One sheet per component (Mold ID) in the family.
+Sheet name = SHORT Mold ID exactly (must match Summary col A).
 
 Contains two side-by-side sections:
-  LEFT   A:G  → Inventory grid (mold sizes × vendors)
+  LEFT   A:E  → Inventory grid (size patterns × vendors)
   RIGHT  H:M  → Sourcing Rules (factory → vendor allocation)
 
 Both sections share the same row range (rows 9–43).
@@ -189,12 +214,16 @@ Both sections share the same row range (rows 9–43).
 4.2 Header (Rows 1–6)
 ------------------------------------------------------------
 
-Row 1  A1: "Mold Inventory"    [Section title, static]
-Row 2  A2: "Mold Code:"        B2: <FamilyCode>    [Python writes B2]
-Row 3  A3: "SoleType:"         B3: <SoleType>      [Python writes B3]
-Row 4  A4: "Component Name:"   B4: <DisplayName>   [Python writes B4]
-Row 5  A5: "Compound:"         B5: <Compound>      [Python writes B5]
+Row 1  A1: "Mold Inventory"           [Section title, static]
+Row 2  A2: "Mold Family:"             B2: <FamilyCode>             [Python writes B2]
+Row 3  A3: "Mold ID:"                 B3: <Full Mold ID>           [Python writes B3]
+Row 4  A4: "Component Description:"   B4: <ComponentDescription>   [Python writes B4]
+Row 5  A5: "Design Compound:"         B5: <DesignCompound>         [Python writes B5]
 Row 6  [blank]
+
+B3 carries the FULL governed Mold ID (e.g. SA-2301-MS-PRI-B); the sheet
+name carries the short form. Sole type, position, and stage are all
+encoded in the Mold ID.
 
 
 ------------------------------------------------------------
@@ -212,13 +241,8 @@ H7: "Select Factory and Vendor from Dropdown List."
 ------------------------------------------------------------
 
 INVENTORY SIDE
-  A8  MoldSize      [Locked, static]
-  B8  ShoeSizes     [Header, static]
-  C8  Vendor_1      [Dropdown → VendorList]
-  D8  Vendor_2      [Dropdown → VendorList]
-  E8  Vendor_3      [Dropdown → VendorList]
-  F8  Vendor_4      [Dropdown → VendorList]
-  G8  TotalQty      [Formula header, static]
+  A8  Sizes         [Locked, static]
+  B8:E8  Vendor headers   [Dropdown → VendorList; Python writes values]
 
 SOURCING SIDE
   H8  Factory Name      [Header, static]
@@ -230,17 +254,22 @@ SOURCING SIDE
 
 
 ------------------------------------------------------------
-4.5 Data Range (Rows 9–43, 35 rows = mold sizes 1.0 → 18.0)
+4.5 Data Range (Rows 9–43, 35 rows)
 ------------------------------------------------------------
 
-INVENTORY SIDE  A9:G43
+INVENTORY SIDE  A9:E43
 
-  A   MoldSize      Fixed: 1, 1.5, 2, … 18  [Locked]
-  B   ShoeSizes     Comma-separated shoe sizes [Editable, free text]
-  C–F Qty per Vendor  Number ≥ 0, blank allowed [Editable]
-  G   TotalQty      Formula: SUM(C:F) for that row [Locked]
+  A   Sizes        Comma-separated shoe sizes covered by one physical
+                   mold size (a size-coverage pattern, e.g. "3.5, 4").
+                   One row per distinct pattern. [Editable, free text]
+  B–E Qty per Vendor   Number ≥ 0, blank allowed [Editable]
 
-  Max 4 vendor columns (C–F). Owner extends template if more needed.
+  Max 4 vendor columns (B–E). Owner extends template if more needed.
+
+  The size patterns correspond 1:1 with the sizeCoverage entries on the
+  asset records in mold_data.json. Two patterns sharing a base size but
+  covering different ranges (e.g. "3.5" vs "3.5, 4, 4.5") are distinct
+  physical mold types and occupy separate rows.
 
 SOURCING SIDE  H9:M43
 
@@ -251,17 +280,17 @@ SOURCING SIDE  H9:M43
   L   Vendor Location   [Auto: XLOOKUP(K, _dimVendor[Vendor Short Name], [Location])]
   M   Vendor Code       [Auto: XLOOKUP(K, _dimVendor[Vendor Short Name], [Vendor ID])]
 
-  Rows are not tied to mold sizes — a sourcing rule in row 9 is unrelated
-  to mold size 1.0 in col A row 9. Users fill from row 9 downward.
-  35 rows available; sufficient for all factory-vendor combinations.
+  Rows are not tied to inventory rows — a sourcing rule in row 9 is
+  unrelated to the size pattern in col A row 9. Users fill from row 9
+  downward. 35 rows available.
 
 
 ------------------------------------------------------------
 4.6 Validation
 ------------------------------------------------------------
 
-  C8:F8   → VendorList   (vendor short name for inventory header)
-  C9:F43  → ≥ 0 numeric  (inventory quantities)
+  B8:E8   → VendorList   (vendor short name for inventory header)
+  B9:E43  → ≥ 0 numeric  (inventory quantities)
   H9:H43  → FactoryList  (factory name dropdown)
   K9:K43  → VendorList   (vendor short name for sourcing)
 
@@ -273,9 +302,9 @@ SOURCING SIDE  H9:M43
 ------------------------------------------------------------
 
 Allow edit:
-  B9:B43    ShoeSizes
-  C8:F8     Vendor header dropdowns
-  C9:F43    Inventory quantities
+  A9:A43    Size patterns
+  B8:E8     Vendor header dropdowns
+  B9:E43    Inventory quantities
   H9:H43    Factory Name (sourcing)
   K9:K43    Vendor Short Name (sourcing)
 
@@ -289,18 +318,17 @@ Block:
 
 Write:
   B2        Family code
-  B3        Sole type
-  B4        Component display name
-  B5        Compound
-  B9:B43    Shoe sizes (sizing rules from JSON)
-  C8:F8     Vendor short name headers (up to 4)
-  C9:F43    Inventory quantities (by vendor column)
+  B3        Full Mold ID
+  B4        Component description
+  B5        Design compound
+  A9:A43    Size patterns (from assets[*].sizeCoverage)
+  B8:E8     Vendor short name headers (up to 4)
+  B9:E43    Inventory quantities (by vendor column × pattern row)
   H9:H{9+n-1}   Factory names (sourcing rules)
   K9:K{9+n-1}   Vendor short names (sourcing rules)
 
 Do NOT touch:
-  Row 7 instructions, row 8 sourcing headers, I/J/L/M formula columns,
-  mold size column A, G TotalQty formulas
+  Row 7 instructions, row 8 sourcing headers, I/J/L/M formula columns
 
 
 ------------------------------------------------------------
@@ -326,17 +354,36 @@ Loaded via Power Query from:
 
     master_references.xlsx
 
+⚠ The template's _dimMoldHierarchies was migrated in place to the v3
+  short Mold IDs (scripts/update_template_v3.py). If the table is
+  refreshed from master_references.xlsx, the upstream file must carry
+  the same 8 rows or the refresh restores the legacy codes.
+
 
 ------------------------------------------------------------
 5.3 Tables
 ------------------------------------------------------------
 
-_dimMoldHierarchies   Component Code, Sole Type, Component Name
-_dimVendor            Vendor Short Name, Vendor Full Name, Vendor ID, Location
-_dimMoldShop          Mold Shop Name
+_dimMoldHierarchies   Component Code, Component Name, Sole Type
+_dimVendor            Vendor ID, Vendor Short Name, Vendor Full Name, Location, ...
 _dimMoldOwnership     Mold Ownership values
 _dimMoldCondition     Mold Condition values
-_dimFactory           Factory Name, Factory Number, Factory Country
+_dimFactory           Factory Number, Factory Name, Factory Country, ...
+
+_dimMoldHierarchies standard rows (Component Code = short Mold ID):
+
+  OS-PRI     Outsole Primary                Outsole
+  OS-BOT     Outsole Bottom Layer           Outsole
+  MS-PRI     Midsole Primary                Midsole
+  MS-PRI-B   Midsole Primary Blocker        Midsole
+  MS-BOT     Midsole Bottom Layer           Midsole
+  MS-BOT-B   Midsole Bottom Layer Blocker   Midsole
+  MS-HEEL    Midsole Heel                   Midsole
+  OT-PRI     Other Component                Other
+
+Position (PRI/BOT/HEEL) and Stage (-B) are encoded in the Component
+Code; the table deliberately has no separate Position/Stage columns
+(they would collide with _dimMoldCondition at column E).
 
 
 ------------------------------------------------------------
@@ -344,7 +391,7 @@ _dimFactory           Factory Name, Factory Number, Factory Country
 ------------------------------------------------------------
 
 MUST include a "Vendor ID" column containing the FTY number.
-The {Component} sheet column M formula uses this column:
+The {MoldID} sheet column M formula uses this column:
 
     XLOOKUP(K9, _dimVendor[Vendor Short Name], _dimVendor[Vendor ID], "")
 
@@ -357,15 +404,15 @@ This returns the stable FTY identifier used in mold_data.json.
 
 - Hidden sheet
 - Protected — no user editing
-- NEVER modified by Python
-- Updated only via Power Query refresh
+- NEVER modified by Python exports
+- Updated only via Power Query refresh (or the one-time migration script)
 
 
 ------------------------------------------------------------
 
 
 ============================================================
-6. SYSTEM PRINCIPLES
+6. SYSTEM PRINCIPLES & FUTURE EXTENSIONS
 ============================================================
 
 1. Structure controlled by owner
@@ -374,10 +421,18 @@ This returns the stable FTY identifier used in mold_data.json.
 4. All relationships enforced via dropdown + XLOOKUP lookup
 5. Errors visible, not hidden
 6. Excel acts as controlled UI, not free-form data entry
-7. Sourcing Rules are component-specific — stored on each {Component} sheet
+7. Sourcing Rules are component-specific — stored on each {MoldID} sheet
 8. Styles are family-level — stored on Summary sheet
+9. No freeform mold identifiers — Summary col A is restricted to the
+   governed short Mold IDs in MoldComponentList (Standard §9.1)
 
-
+FUTURE EXTENSIONS (deliberately not implemented yet):
+  - Mold Set (A/B/C/D), Revision, and asset Status columns on Summary.
+    The standard defines them as asset attributes, but the current
+    source data carries no values; adding columns now would shift the
+    H–N input zone and break formulas/protection for no data. When the
+    business starts tracking them, extend the Summary table to the
+    right of N and add dimension tables for Status and Mold Set.
 ============================================================
 END OF SPEC
 ============================================================

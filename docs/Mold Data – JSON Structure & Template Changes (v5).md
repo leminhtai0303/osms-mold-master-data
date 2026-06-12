@@ -1,7 +1,16 @@
-# Mold Data — JSON Structure & Template Changes (v3)
+# Mold Data — JSON Structure & Template Changes (v5)
+
+Aligned with the Bottoming Mold Master Data Standard v3.0/v3.1
+(see `docs/reference/` — the source of truth for naming and governance).
+
+Core concept (Standard §3): mold data is split into two layers —
+the **Mold ID** (product definition: what a mold produces) and the
+**Physical Asset** (the actual mold: vendor, size coverage, mold set,
+revision, status). In the JSON, the component object is the Mold ID
+layer and `assets[]` is the physical layer.
 
 ============================================================
-1. JSON STRUCTURE OVERVIEW  (mold_data.json  schemaVersion 3.0)
+1. JSON STRUCTURE OVERVIEW  (mold_data.json  schemaVersion 5.0)
 ============================================================
 
 ------------------------------------------------------------
@@ -9,7 +18,7 @@
 ------------------------------------------------------------
 
 {
-  "schemaVersion": "3.0",
+  "schemaVersion": "5.0",
   "lastUpdated":   "YYYY-MM-DD",
   "reference":     { ... },
   "families":      { ... }
@@ -33,36 +42,48 @@
     "<CODE>": { "name": "Display name" },
     ...
   },
-  "allowedSoleTypes": ["Outsole", "Midsole"]
+  "moldTypes":     { "OS": "Outsole", "MS": "Midsole", "OT": "Other" },
+  "positions":     { "PRI": "Primary", "BOT": "Bottom Layer", "HEEL": "Heel" },
+  "stages":        ["Default", "Blocker"],
+  "assetStatuses": ["Active", "Inactive", "In Repair", "Retired"],
+  "moldSets":      ["A", "B", "C", "D"]
 }
 
 Key rules:
   - vendors keyed by vendorId (FTY number) — stable, truly unique identifier
-  - vendorCode (generated string) is NOT stored anywhere in v3
-  - location lives on the vendor, not on individual mold entries
+  - location lives on the vendor, not on individual asset entries
     (business rule: one vendor = one location)
+  - moldTypes / positions / stages / assetStatuses / moldSets are the
+    controlled vocabularies from the standard (replaces allowedSoleTypes)
 
 
 ------------------------------------------------------------
-1.3 families block — one entry per mold family
+1.3 families block — one entry per Mold Family
 ------------------------------------------------------------
 
 "families": {
-  "<MOLD_CODE>": {
-    "moldCode":             "SA-2255",
+  "<MOLD_FAMILY>": {
+    "moldFamily":           "SA-2255",    ← renamed from moldCode
+    "designFamily":         "SA-2255",    ← groups related variants; defaults to moldFamily
+    "isLegacyCode":         false,        ← true for frozen non-standard codes (S1612, ...)
     "notes":                null,
-    "stylesUsingThisFamily": { ... },   ← see 1.4
-    "components": {                     ← see 1.5
-      "Outsole": { ... },
-      "Midsole": { ... }
+    "stylesUsingThisFamily": { ... },     ← see 1.4 (unchanged from v4)
+    "components": {                       ← see 1.5 — FLAT, keyed by full Mold ID
+      "SA-2255-OS-PRI":  { ... },
+      "SA-2255-MS-PRI":  { ... }
     }
   }
 }
 
-Removed vs v2:
-  - "brands": []  was always empty — removed
-  - "sourcingRules": [] at family level — moved inside each component
-  - "sizingRulesByComponent": {} at family level — moved inside each component
+The Mold Family code is an OPAQUE identifier (Standard §6.1). The system
+does not parse meaning from it. Width variants (SA-2017-E, SA-2654-4E)
+are legitimate separate families. Frozen legacy codes (S1612) are
+retained but never replicated.
+
+Removed vs v4:
+  - the intermediate "Outsole"/"Midsole" nesting level under components —
+    components are now keyed directly by their governed Mold ID;
+    the sole type is carried on each component as `soleType`
 
 
 ------------------------------------------------------------
@@ -79,257 +100,230 @@ Object keyed by brand. Each value is a list of style objects.
 }
 
   soleTypes  which components this style sources from THIS family
-             ["Outsole", "Midsole"]  — uses both components
-             ["Outsole"]             — uses only the outsole
-             ["Midsole"]             — uses only the midsole
-
-Previously (v2): flat array [{ "brand": "SAUCONY", "styleName": "..." }]
-  — brand was duplicated on every row, soleTypes did not exist
 
 
 ------------------------------------------------------------
-1.5 component block
+1.5 component block — the Mold ID (product definition) layer
 ------------------------------------------------------------
+
+Component keys are governed Mold IDs:
+
+    {MoldFamily}-{Type}-{Position}(-B)
+
+    Type     ∈ {OS, MS, OT}
+    Position ∈ {PRI, BOT, HEEL}
+    -B       = Blocker stage suffix
 
 "components": {
-  "Outsole": {
-    "OS1": {
-      "displayName":  "OS1 (Top)",
-      "compound":     "Rubber",
-      "notes":        null,
+  "SA-2501-MS-BOT-B": {
+    "moldId":               "SA-2501-MS-BOT-B",
+    "legacyCode":           "MS2-1",          ← original source-data code (back-compat key)
+    "type":                 "MS",             ← OS / MS / OT
+    "position":             "BOT",            ← PRI / BOT / HEEL
+    "stage":                "Blocker",        ← Default / Blocker
+    "soleType":             "Midsole",        ← kept: style soleTypes + Excel lookups use it
+    "componentDescription": "Midsole Bottom Layer Blocker",   ← generated, supplementary
+    "constructionType":     "Vertical Split", ← derived per (family, type) — see below
+    "designCompound":       "TPEE",           ← renamed from compound
+    "notes":                null,
 
-      "sizingRules": {                  ← was sizingRulesByComponent at family level
-        "moldSizeToShoeSizes": {
-          "3.5": ["3.5", "4"],
-          "4.5": ["4.5", "5"],
-          ...
-          "14": ["14"]
-        }
-      },
+    "sourcingRules": [                ← unchanged shape; source sheets still
+      { "factoryNumber": 61589,         speak legacy codes ("Sole Part" = MS2-1)
+        "vendorId": "FTY000594" }
+    ],
 
-      "sourcingRules": [                ← was sourcingRules at family level
-        { "factoryNumber": 61589, "vendorId": "FTY000594" },
-        { "factoryNumber": 62430, "vendorId": "FTY000594" }
-      ],
-
-      "molds": [                        ← one entry per vendor holding molds
-        {
-          "vendorId":     "FTY000594",  ← FK into reference.vendors
-          "vendorName":   null,         ← only present when vendorId is null (pending FTY)
-          "moldShopCode": "LONGYU",
-          "initSeason":   "F22",
-          "lastDemandSeason": "F26",
-          "capacity": {
-            "dailyOutput":  120.0,
-            "actualOutput": null
-          },
-          "asset": {
-            "moldCost":      1465.0,
-            "ownership":     "WWW",
-            "condition":     "1. Good",
-            "conditionNote": "OK"
-          },
-          "inventory": {
-            "totalMoldQty": 18,
-            "qtyByMoldSize": {
-              "3.5": 1, "4.5": 1, "5.5": 2, ...
-            }
-          },
-          "comments": null
-        }
-      ]
-    }
+    "assets": [ ... ]                 ← see 1.6 — the Physical Asset layer
   }
 }
 
+constructionType is DERIVED from which positions exist for the same
+(family, type), ignoring the -B stage (Standard §6.3):
 
-------------------------------------------------------------
-1.6 Null vendorId molds
-------------------------------------------------------------
+  {PRI}            → "Single Piece"
+  {PRI, BOT}       → "Vertical Split"
+  {PRI, HEEL}      → "Main + Heel"
+  {PRI, BOT, HEEL} → "3-Way"
+  no PRI           → null  (governance gap — flagged by DQ check I16)
 
-A mold entry is allowed to have vendorId: null when the vendor has not yet
-been assigned a Vendor ID (FTY number) in the master reference.
-
-In this case, add vendorName as a temporary display-only field:
-
-  { "vendorId": null, "vendorName": "JIATAI-VN(HONGCHEN)", ... }
-
-Once the FTY is registered:
-  - add the vendor to reference.vendors keyed by the new FTY
-  - replace vendorId: null + vendorName with the real FTY
-  - drop vendorName
+Removed vs v4: displayName (reconstructable from legacyCode +
+componentDescription).
 
 
 ------------------------------------------------------------
-1.7 Field changes summary (v2 → v3)
+1.6 assets block — the Physical Asset layer
 ------------------------------------------------------------
 
-REMOVED
-  reference.vendors key was generated vendorCode  → now vendorId (FTY)
-  reference.vendors[*].vendorCode field            → removed
-  families[*].brands                               → removed (always empty)
-  families[*].sourcingRules (family-level)         → moved into each component
-  families[*].sizingRulesByComponent (family-level)→ moved into each component
-  molds[*].vendorCode                              → removed (not stable)
-  molds[*].vendorName                              → removed (except null-FTY fallback)
-  molds[*].vendorShortName                         → removed (resolve from reference)
-  molds[*].location                                → removed (resolve from vendor reference)
-  molds[*].moldShopName                            → removed (resolve from reference.moldShops)
-  molds[*].remark                                  → merged into comments
+One entry per vendor-level asset group. NOTE on granularity: the raw
+source data is vendor-row grained, not per-physical-mold, so one entry
+represents all physical molds of this Mold ID held at one vendor; the
+per-size detail lives in sizeCoverage. No synthetic Asset ID is
+generated — records are rebuilt on every pipeline run.
 
-ADDED
-  reference.vendors[*].location                   ← vendor has one location
-  families[*].components.*.*. sizingRules          ← was family-level lookup
-  families[*].components.*.*. sourcingRules        ← was family-level, included soleType+solePart
-  stylesUsingThisFamily keyed by brand             ← was flat array
-  stylesUsingThisFamily[brand][*].soleTypes        ← new field
+"assets": [
+  {
+    "vendorId":         "FTY000594",  ← FK into reference.vendors
+    "moldShopCode":     "LONGYU",
+    "moldSet":          null,         ← standard field (A/B/C/D); not in source data — A implied
+    "revision":         null,         ← standard field (integer); not in source data — 0 implied
+    "status":           null,         ← Active / Inactive / In Repair / Retired — to be backfilled
+    "ownership":        "WWW",
+    "condition":        "1. Good",    ← legacy raw condition; NOT mapped onto status
+    "conditionNote":    "OK",
+    "moldCost":         1465.0,
+    "initSeason":       "F22",
+    "lastDemandSeason": "F26",
+    "capacity": {
+      "dailyOutput":  120.0,
+      "actualOutput": null
+    },
+    "totalMoldQty":     18,
+    "sizeCoverage": [                 ← renamed from inventory.coverage
+      { "shoeSizes": ["3.5", "4"], "qty": 1 },
+      ...
+    ],
+    "sizeGrouping":     "1:2",        ← derived: uniform shoeSizes length n → "1:n", else "mixed"
+    "comments":         null
+  }
+]
 
-CHANGED
-  sourcingRules entries: removed soleType, solePart ← redundant when inside component
-  molds[*].vendorId: now the ONLY vendor identifier on a mold entry
-
-
-============================================================
-2. EXCEL TEMPLATE CHANGES
-============================================================
-
-------------------------------------------------------------
-2.1 Sheet structure
-------------------------------------------------------------
-
-VERSION 2 (old)                  VERSION 3 (new)
-─────────────────────────────    ──────────────────────────────────────
-1. Summary                       1. Summary  (+ Styles section added)
-2. MoldInv_{ComponentCode}       2. {ComponentCode}  (renamed; + Sourcing
-3. Sourcing Rule  ← removed         Rules section added)
-4. Styles         ← removed      3. _Master_Ref  (unchanged)
-5. _Master_Ref
-
-Standalone Sourcing Rule and Styles sheets eliminated.
-Their data is now embedded in the sheets above.
+vendorId may be null when the vendor has no FTY number yet; in that case
+a temporary "vendorName" display field is added (same rule as v4).
 
 
 ------------------------------------------------------------
-2.2 Summary sheet changes
+1.7 Legacy → v3 mapping (applied by data_processing.ipynb)
 ------------------------------------------------------------
 
-ADDED — Styles section (right of main table)
+Implemented in notebooks/mold_v3_mapping.py — shared by all notebooks.
 
-  R4        Section title: "Styles Using This Family"
-  R5        Banner: "Input Style Name"
-  R6        Column headers: Style Name | Outsole | Midsole
-  R7:T31    Input range (25 rows)
-              R = style name (free text)
-              S = Outsole flag  (1 = uses this family's outsole, 0 = does not)
-              T = Midsole flag  (1 = uses this family's midsole, 0 = does not)
+Component codes (Standard §8):
 
-CHANGED — Total Mold Qty formula (col F)
+  Legacy code   displayName               Mold ID suffix
+  ───────────   ───────────────────────   ──────────────
+  OS1           OS1 (Top)                 -OS-PRI
+  OS2           OS2 (Bottom)              -OS-BOT
+  MS1           MS1 (Top)                 -MS-PRI
+  MS1-1         MS1 (Top - Blocker)       -MS-PRI-B
+  MS2           MS2 (Bottom)              -MS-BOT
+  MS2-1         MS2 (Bottom - Blocker)    -MS-BOT-B
+  MS3           MS3 (Heel)                -MS-HEEL
 
-  Old:  sh = "MoldInv_" & A7     ← hardcoded prefix, breaks on rename
-  New:  sh = A7                  ← component code is now the sheet name directly
+  Rule: trailing digit 1→PRI, 2→BOT, 3→HEEL; a "-1" sub-suffix or
+  "Blocker" in the display name → -B stage. Unmappable codes are
+  quarantined (reason = unmappable_component_code), as are rows whose
+  sole type contradicts the parsed type (reason = type_mismatch).
 
-  ⚠ Any files generated from the old template must have this formula
-    updated in F7:F31 before use with the new component sheet names.
+Family codes (Standard §6.1, documented but NOT auto-split — no Saucony
+family in the current dataset carries these suffixes):
+
+  -1 / -2 / -3 trailing digits   → Revision attribute on the asset record
+  -A / -B / -C trailing letters  → Mold Set attribute on the asset record
+  -E / -4E / -M / -W variants    → separate Mold Family (kept as-is)
+
+  DQ check I19 flags candidate codes for review. Family codes are
+  whitespace-stripped (fixes the historical 'SA-1517 ' duplicate).
 
 
 ------------------------------------------------------------
-2.3 {ComponentCode} sheet changes
+1.8 Field changes summary (v4 → v5)
 ------------------------------------------------------------
 
 RENAMED
-  MoldInv_{ComponentCode}  →  {ComponentCode}   (e.g. "OS1", "MS1")
-  Sheet name must exactly match the Component Code used in Summary col A.
+  families[*].moldCode                   → moldFamily
+  components.*.compound                  → designCompound
+  components.*.molds                     → assets
+  molds[*].inventory.coverage            → assets[*].sizeCoverage
 
-ADDED — Sourcing Rules section (right of inventory grid)
+RESTRUCTURED
+  components."Outsole"/"Midsole".<code>  → components.<MoldID>  (flat, governed key)
+  molds[*].asset.{...}                   → flattened onto the asset entry
+  molds[*].inventory.{...}               → flattened onto the asset entry
 
-  Layout: columns H–M, rows 7–43
+ADDED
+  families[*].designFamily, isLegacyCode
+  components.*: moldId, legacyCode, type, position, stage,
+                componentDescription, constructionType
+  assets[*]:    moldSet, revision, status, sizeGrouping
+  reference:    moldTypes, positions, stages, assetStatuses, moldSets
 
-  H7        Instruction: "Select Factory and Vendor from Dropdown List."
-  H8:M8     Column headers (static, locked):
-              H8 Factory Name       I8 Factory Location   J8 Factory Code
-              K8 Vendor Short Name  L8 Vendor Location    M8 Vendor Code
+REMOVED
+  components.*.displayName               → use legacyCode / componentDescription
+  reference.allowedSoleTypes             → superseded by reference.moldTypes
 
-  H9:H43    Factory Name       [Dropdown → FactoryList, user-entered]
-  I9:I43    Factory Location   [Auto: XLOOKUP from _dimFactory[Factory Country]]
-  J9:J43    Factory Code       [Auto: XLOOKUP from _dimFactory[Factory Number]]
-  K9:K43    Vendor Short Name  [Dropdown → VendorList, user-entered]
-  L9:L43    Vendor Location    [Auto: XLOOKUP from _dimVendor[Location]]
-  M9:M43    Vendor Code        [Auto: XLOOKUP from _dimVendor[Vendor ID]]
-              ↑ "Vendor Code" column returns the Vendor ID (FTY number)
 
-  35 rows available (rows 9–43, shared row range with inventory grid).
-  Rows are independent of mold sizes — fill sourcing from row 9 downward.
-
-CLARIFIED — Inventory vendor columns
-
-  Max 4 vendor columns: C, D, E, F  (not 6 as previously stated)
-  Vendor header dropdowns:  C8:F8  → VendorList
-  Inventory qty validation: C9:F43 → number ≥ 0
-
+============================================================
+2. EXCEL TEMPLATE CHANGES (v5)
+============================================================
 
 ------------------------------------------------------------
-2.4 _Master_Ref changes
+2.1 _Master_Ref._dimMoldHierarchies
 ------------------------------------------------------------
 
-_dimVendor table MUST include a "Vendor ID" column containing the FTY number.
+Rows replaced with the 8 standard short Mold IDs (was 7 legacy codes):
 
-This column is required by the Sourcing Rules section on each component sheet:
+  Component Code   Component Name                 Sole Type
+  ──────────────   ────────────────────────────   ─────────
+  OS-PRI           Outsole Primary                Outsole
+  OS-BOT           Outsole Bottom Layer           Outsole
+  MS-PRI           Midsole Primary                Midsole
+  MS-PRI-B         Midsole Primary Blocker        Midsole
+  MS-BOT           Midsole Bottom Layer           Midsole
+  MS-BOT-B         Midsole Bottom Layer Blocker   Midsole
+  MS-HEEL          Midsole Heel                   Midsole
+  OT-PRI           Other Component                Other
 
-  M9 = XLOOKUP(K9, _dimVendor[Vendor Short Name], _dimVendor[Vendor ID], "")
+The table keeps its three columns. Position and Stage are encoded in
+the Component Code itself (separate columns would collide with
+_dimMoldCondition at E1; deliberately omitted).
 
-The Vendor ID returned here is the stable FK that links back to
-reference.vendors in mold_data.json.
-
-All other tables and named ranges unchanged.
-
+⚠ If _dimMoldHierarchies is refreshed via Power Query from
+  master_references.xlsx, the upstream file must carry the same 8 rows
+  or the refresh will restore the legacy codes.
 
 ------------------------------------------------------------
-2.5 Python (json_export notebook) changes
+2.2 Label changes
+------------------------------------------------------------
+
+Summary sheet
+  A1  "Mold Code:"       → "Mold Family:"
+  A6  "Component Code"   → "Mold ID"
+
+{Component} sheet
+  A2  "Mold Code:"       → "Mold Family:"
+  A3  "SoleType:"        → "Mold ID:"               (full governed Mold ID)
+  A4  "Component Name:"  → "Component Description:"
+  A5  "Compound:"        → "Design Compound:"
+
+No columns were moved or inserted — all formulas, validations, and
+protection ranges are unchanged. Mold Set / Revision / Status columns
+are deliberately NOT added (all-null in source data; would shift the
+H–N input zone). Documented as a future extension in the Design Spec.
+
+------------------------------------------------------------
+2.3 Sheet naming
+------------------------------------------------------------
+
+Component sheets are named by SHORT Mold ID (family prefix dropped —
+sheet names are limited to 31 chars and the family is already in the
+file name):
+
+  v4:  "OS1", "MS1", "MS2-1"
+  v5:  "OS-PRI", "MS-PRI", "MS-BOT-B"
+
+Summary column A carries the same short Mold ID, so the Total Mold Qty
+INDIRECT formula chain (sheet name = col A value) keeps working.
+
+------------------------------------------------------------
+2.4 Python (json_export notebook) changes
 ------------------------------------------------------------
 
 CHANGED
-  Vendor short name resolution
-    Old: mold["vendorShortName"]
-    New: reference["vendors"][mold["vendorId"]]["shortName"]
-         with fallback to mold["vendorName"] when vendorId is null
-
-  Sizing rules source
-    Old: fam["sizingRulesByComponent"][comp_code]
-    New: comp["sizingRules"]
-
-  Sourcing rules source
-    Old: fam["sourcingRules"]  (family-level, includes soleType/solePart)
-    New: flatten comp["sourcingRules"] across all components
-         (component context is known from iteration)
-
-  Styles iteration
-    Old: for s in fam["stylesUsingThisFamily"]: s["styleName"]
-    New: for brand, styles in fam["stylesUsingThisFamily"].items():
-             for s in styles: s["styleName"], s["soleTypes"]
-
-  Vendor header write range
-    Old: C8:H8  (6 columns)
-    New: C8:F8  (4 columns)
-
-  Component sheet name
-    Old: "MoldInv_" + comp_code
-    New: comp_code  (no prefix)
-
-ADDED
-  Write sourcing rules to component sheet
-    H9:H{9+n-1}  factory names
-    K9:K{9+n-1}  vendor short names
-    (I, J, L, M auto-fill via XLOOKUP — Python does not touch them)
-
-  Write styles to Summary sheet
-    R7:R{7+n-1}  style names
-    S7:S{7+n-1}  outsole flags  (1 or None)
-    T7:T{7+n-1}  midsole flags  (1 or None)
-
-REMOVED
-  write_sourcing_rules() function  ← logic distributed into write_summary()
-                                      and write_component_sheet()
-
+  Component iteration   flat: for mold_id, comp in components.items()
+  Sheet / col A name    short Mold ID rebuilt from type/position/stage
+  Header cells          B2 family, B3 full Mold ID,
+                        B4 componentDescription, B5 designCompound
+  Asset fields          read from flattened assets[] / sizeCoverage
+  Schema guard          raises unless schemaVersion == "5.0"
 
 ============================================================
 END OF DOCUMENT
